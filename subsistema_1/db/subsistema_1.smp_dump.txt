@@ -1,0 +1,7 @@
+
+State Machine - |subsistema_1|fstate
+Name fstate.Pared_der fstate.Pared_Izq fstate.Centrado fstate.Idle 
+fstate.Idle 0 0 0 0 
+fstate.Centrado 0 0 1 1 
+fstate.Pared_Izq 0 1 0 1 
+fstate.Pared_der 1 0 0 1 
