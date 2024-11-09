@@ -1,0 +1,38 @@
+library IEEE;
+	 use IEEE.STD_LOGIC_1164.ALL;
+	 
+entity comparador is
+    Port ( 
+        CH0    : in  std_logic;    -- Señal de entrada CH0
+        CH1    : in  std_logic;    -- Señal de entrada CH1
+		  A		:out std_logic;
+		  B		:out std_logic;
+    );
+end comparador;
+
+architecture Behavioral of comparador is
+
+	signal CH0, CH1 : std_logic;
+	valor umbral
+
+begin
+	
+		process(CH0, CH1)
+		begin
+			if(CH0 < "000011001000") then
+				A <= "1";
+				else
+				A <= "0";
+				end if;
+				
+				
+				
+				if(CH1 < "000011001000") then
+				B <= "1";
+				else
+				B <= "0";
+				end if;
+			
+		end process;
+	
+end Behavioral;
