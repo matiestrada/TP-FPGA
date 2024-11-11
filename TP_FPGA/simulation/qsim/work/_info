@@ -3,79 +3,117 @@ K3
 13
 cModel Technology
 Z0 dD:\TP FPGA\simulation\qsim
-vcomparador
-Z1 Ik28FfE2_2CiCJWRYH:0kQ2
-Z2 V]Ll8W0RIc5S5adVMV`_g33
-Z3 dD:\TP FPGA\simulation\qsim
-Z4 w1731018283
-Z5 8Comparador.vo
-Z6 FComparador.vo
+vcomp_prueba
+Z1 !s100 Y_XlKC53W:QVk`:`W<KYC2
+Z2 I7@FiGK92Q3@TXicOW]HEU1
+Z3 V^Uo=GKU5azNI2>X8UZooQ2
+Z4 dC:\Users\Sorteito\Documents\GitHub\TP-FPGA\TP_FPGA\simulation\qsim
+Z5 w1731202605
+Z6 8Comparador.vo
+Z7 FComparador.vo
 L0 31
-Z7 OV;L;10.1d;51
+Z8 OV;L;10.1d;51
 r1
 31
-Z8 !s90 -work|work|Comparador.vo|
-Z9 o-work work -O0
+Z9 !s90 -work|work|Comparador.vo|
+Z10 o-work work -O0
 !i10b 1
-Z10 !s100 ZCF3RKY]0La8_Uh=WMGlh1
 !s85 0
-Z11 !s108 1731018284.107000
+Z11 !s108 1731202606.580000
 Z12 !s107 Comparador.vo|
 !s101 -O0
-vcomparador_vlg_check_tst
-Z13 !s100 9W`mlbl]jjlDz^VX:c7hT3
-Z14 I_N^hCFLho]_fSbUdoFd?^3
-Z15 VZ7KTUck?ii`?UPodY=APH3
-R3
-Z16 w1731015925
-Z17 8Comparador.vt
-Z18 FComparador.vt
-L0 59
+vcomp_prueba_vlg_vec_tst
+!i10b 1
+Z13 !s100 G[okanVPPAJKNfEazBkOK3
+Z14 I_f00kBdm7d7V@=z3h[i7[3
+Z15 V6Ia3jTHe^mffR:C2b;8X53
+R4
+R5
+Z16 8Comparador.vt
+Z17 FComparador.vt
+L0 29
+R8
+r1
+!s85 0
+31
+!s108 1731202606.707000
+!s107 Comparador.vt|
+Z18 !s90 -work|work|Comparador.vt|
+!s101 -O0
+R10
+vcomparador
+Z19 Ik28FfE2_2CiCJWRYH:0kQ2
+Z20 V]Ll8W0RIc5S5adVMV`_g33
+Z21 dD:\TP FPGA\simulation\qsim
+Z22 w1731018283
+R6
 R7
+L0 31
+R8
 r1
 31
-Z19 !s108 1731015927.590000
-Z20 !s107 Comparador.vt|
-Z21 !s90 -work|work|Comparador.vt|
 R9
+R10
+Z23 !s100 ZCF3RKY]0La8_Uh=WMGlh1
+Z24 !s108 1731018284.107000
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vcomparador_vlg_check_tst
+Z25 !s100 9W`mlbl]jjlDz^VX:c7hT3
+Z26 I_N^hCFLho]_fSbUdoFd?^3
+Z27 VZ7KTUck?ii`?UPodY=APH3
+R21
+Z28 w1731015925
+R16
+R17
+L0 59
+R8
+r1
+31
+Z29 !s108 1731015927.590000
+Z30 !s107 Comparador.vt|
+R18
+R10
 !i10b 1
 !s85 0
 !s101 -O0
 vcomparador_vlg_sample_tst
-Z22 !s100 X6FW3Nkg9TbolYDN[C7d10
-Z23 Ijj:EhJ`U?PKm?FaSYJ_eL0
-Z24 VIE@1?ogiKm9EC3I4T6b@E2
-R3
+Z31 !s100 X6FW3Nkg9TbolYDN[C7d10
+Z32 Ijj:EhJ`U?PKm?FaSYJ_eL0
+Z33 VIE@1?ogiKm9EC3I4T6b@E2
+R21
+R28
 R16
 R17
-R18
 L0 29
-R7
+R8
 r1
 31
-R19
-R20
-R21
-R9
+R29
+R30
+R18
+R10
 !i10b 1
 !s85 0
 !s101 -O0
 vcomparador_vlg_vec_tst
-!i10b 1
-!s100 K=Jj9_W2^L:>Ih7T]9jHd0
-IoRHP_]h@5o3?GHmMk<RMg0
-Z25 V6G]SYVk@]hJW^O^D_bgjW2
-R3
-w1731018282
-R17
-R18
-L0 29
-R7
-r1
-!s85 0
-31
-!s108 1731018284.170000
-!s107 Comparador.vt|
+Z34 IoRHP_]h@5o3?GHmMk<RMg0
+Z35 V6G]SYVk@]hJW^O^D_bgjW2
 R21
+Z36 w1731018282
+R16
+R17
+L0 29
+R8
+r1
+31
+R18
+R10
+Z37 !s100 K=Jj9_W2^L:>Ih7T]9jHd0
+Z38 !s108 1731018284.170000
+R30
+!i10b 1
+!s85 0
 !s101 -O0
-R9

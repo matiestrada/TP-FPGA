@@ -1,0 +1,496 @@
+$comment
+	File created using the following command:
+		vcd file Comparador.msim.vcd -direction
+$end
+$date
+	Sat Nov 09 22:36:47 2024
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module comp_prueba_vlg_vec_tst $end
+$var reg 1 ! clk $end
+$var reg 1 " dout $end
+$var wire 1 # chip_sel $end
+$var wire 1 $ din $end
+$var wire 1 % LEDS [1] $end
+$var wire 1 & LEDS [0] $end
+$var wire 1 ' sclk $end
+$scope module i1 $end
+$var wire 1 ( gnd $end
+$var wire 1 ) vcc $end
+$var wire 1 * unknown $end
+$var tri1 1 + devclrn $end
+$var tri1 1 , devpor $end
+$var tri1 1 - devoe $end
+$var wire 1 . inst|Resultado[1]~0_combout $end
+$var wire 1 / inst|LessThan0~1_combout $end
+$var wire 1 0 inst2|adc_mega_0|ADC_CTRL|addr_shift_reg~8_combout $end
+$var wire 1 1 inst2|adc_mega_0|ADC_CTRL|addr_shift_reg~9_combout $end
+$var wire 1 2 inst2|adc_mega_0|ADC_CTRL|addr_shift_reg[5]~10_combout $end
+$var wire 1 3 inst2|adc_mega_0|ADC_CTRL|addr_shift_reg~11_combout $end
+$var wire 1 4 inst2|adc_mega_0|CH1[10]~feeder_combout $end
+$var wire 1 5 inst2|adc_mega_0|CH1[8]~feeder_combout $end
+$var wire 1 6 inst2|adc_mega_0|CH1[1]~feeder_combout $end
+$var wire 1 7 inst2|adc_mega_0|CH1[2]~feeder_combout $end
+$var wire 1 8 inst2|adc_mega_0|CH0[1]~feeder_combout $end
+$var wire 1 9 inst2|adc_mega_0|CH0[4]~feeder_combout $end
+$var wire 1 : inst2|adc_mega_0|ADC_CTRL|reading1[10]~feeder_combout $end
+$var wire 1 ; inst2|adc_mega_0|ADC_CTRL|reading0[4]~feeder_combout $end
+$var wire 1 < inst2|adc_mega_0|ADC_CTRL|reading1[8]~feeder_combout $end
+$var wire 1 = inst2|adc_mega_0|ADC_CTRL|reading0[1]~feeder_combout $end
+$var wire 1 > inst2|adc_mega_0|ADC_CTRL|reading1[2]~feeder_combout $end
+$var wire 1 ? inst2|adc_mega_0|ADC_CTRL|reading1[0]~feeder_combout $end
+$var wire 1 @ chip_sel~output_o $end
+$var wire 1 A sclk~output_o $end
+$var wire 1 B din~output_o $end
+$var wire 1 C LEDS[1]~output_o $end
+$var wire 1 D LEDS[0]~output_o $end
+$var wire 1 E inst2|adc_mega_0|ADC_CTRL|currState.resetState~feeder_combout $end
+$var wire 1 F inst2|adc_mega_0|ADC_CTRL|currState.resetState~q $end
+$var wire 1 G inst2|adc_mega_0|ADC_CTRL|Add2~1_combout $end
+$var wire 1 H inst2|adc_mega_0|ADC_CTRL|address~2_combout $end
+$var wire 1 I inst2|adc_mega_0|ADC_CTRL|address[2]~1_combout $end
+$var wire 1 J inst2|adc_mega_0|ADC_CTRL|LessThan0~0_combout $end
+$var wire 1 K inst2|adc_mega_0|ADC_CTRL|next_addr[0]~0_combout $end
+$var wire 1 L inst2|adc_mega_0|ADC_CTRL|address~3_combout $end
+$var wire 1 M inst2|adc_mega_0|ADC_CTRL|Add2~0_combout $end
+$var wire 1 N inst2|adc_mega_0|ADC_CTRL|address~0_combout $end
+$var wire 1 O inst2|adc_mega_0|ADC_CTRL|Selector1~1_combout $end
+$var wire 1 P inst2|adc_mega_0|ADC_CTRL|Selector2~0_combout $end
+$var wire 1 Q inst2|adc_mega_0|ADC_CTRL|Selector2~1_combout $end
+$var wire 1 R inst2|adc_mega_0|ADC_CTRL|currState.doneState~q $end
+$var wire 1 S inst2|adc_mega_0|go~0_combout $end
+$var wire 1 T inst2|adc_mega_0|go~q $end
+$var wire 1 U inst2|adc_mega_0|ADC_CTRL|Selector0~0_combout $end
+$var wire 1 V inst2|adc_mega_0|ADC_CTRL|currState.waitState~q $end
+$var wire 1 W inst2|adc_mega_0|ADC_CTRL|Selector1~0_combout $end
+$var wire 1 X inst2|adc_mega_0|ADC_CTRL|Selector1~2_combout $end
+$var wire 1 Y inst2|adc_mega_0|ADC_CTRL|currState.transState~q $end
+$var wire 1 Z inst2|adc_mega_0|ADC_CTRL|counter[0]~10_combout $end
+$var wire 1 [ inst2|adc_mega_0|ADC_CTRL|counter[7]~26_combout $end
+$var wire 1 \ inst2|adc_mega_0|ADC_CTRL|counter[0]~11 $end
+$var wire 1 ] inst2|adc_mega_0|ADC_CTRL|counter[1]~12_combout $end
+$var wire 1 ^ inst2|adc_mega_0|ADC_CTRL|counter[1]~13 $end
+$var wire 1 _ inst2|adc_mega_0|ADC_CTRL|counter[2]~14_combout $end
+$var wire 1 ` inst2|adc_mega_0|ADC_CTRL|counter[2]~15 $end
+$var wire 1 a inst2|adc_mega_0|ADC_CTRL|counter[3]~16_combout $end
+$var wire 1 b ~GND~combout $end
+$var wire 1 c inst2|adc_mega_0|ADC_CTRL|Equal1~0_combout $end
+$var wire 1 d inst2|adc_mega_0|ADC_CTRL|sclk~0_combout $end
+$var wire 1 e inst2|adc_mega_0|ADC_CTRL|sclk~q $end
+$var wire 1 f inst2|adc_mega_0|ADC_CTRL|sclk_counter~5_combout $end
+$var wire 1 g inst2|adc_mega_0|ADC_CTRL|sclk_counter~2_combout $end
+$var wire 1 h inst2|adc_mega_0|ADC_CTRL|counter[3]~17 $end
+$var wire 1 i inst2|adc_mega_0|ADC_CTRL|counter[4]~18_combout $end
+$var wire 1 j inst2|adc_mega_0|ADC_CTRL|counter[4]~19 $end
+$var wire 1 k inst2|adc_mega_0|ADC_CTRL|counter[5]~20_combout $end
+$var wire 1 l inst2|adc_mega_0|ADC_CTRL|counter[5]~21 $end
+$var wire 1 m inst2|adc_mega_0|ADC_CTRL|counter[6]~23 $end
+$var wire 1 n inst2|adc_mega_0|ADC_CTRL|counter[7]~24_combout $end
+$var wire 1 o inst2|adc_mega_0|ADC_CTRL|counter[6]~22_combout $end
+$var wire 1 p inst2|adc_mega_0|ADC_CTRL|Equal1~1_combout $end
+$var wire 1 q inst2|adc_mega_0|ADC_CTRL|sclk_counter[0]~3_combout $end
+$var wire 1 r inst2|adc_mega_0|ADC_CTRL|sclk_counter~6_combout $end
+$var wire 1 s inst2|adc_mega_0|ADC_CTRL|sclk_counter~4_combout $end
+$var wire 1 t inst2|adc_mega_0|ADC_CTRL|Add1~0_combout $end
+$var wire 1 u inst2|adc_mega_0|ADC_CTRL|sclk_counter~7_combout $end
+$var wire 1 v inst2|adc_mega_0|ADC_CTRL|always5~0_combout $end
+$var wire 1 w inst2|adc_mega_0|ADC_CTRL|always5~1_combout $end
+$var wire 1 x inst2|adc_mega_0|ADC_CTRL|nextState.pauseState~0_combout $end
+$var wire 1 y inst2|adc_mega_0|ADC_CTRL|currState.pauseState~q $end
+$var wire 1 z inst2|adc_mega_0|ADC_CTRL|cs_n~2_combout $end
+$var wire 1 { clk~input_o $end
+$var wire 1 | clk~inputclkctrl_outclk $end
+$var wire 1 } inst2|adc_mega_0|ADC_CTRL|addr_shift_reg~12_combout $end
+$var wire 1 ~ inst2|adc_mega_0|ADC_CTRL|addr_shift_reg~3_combout $end
+$var wire 1 !! inst2|adc_mega_0|ADC_CTRL|addr_shift_reg~7_combout $end
+$var wire 1 "! inst2|adc_mega_0|ADC_CTRL|addr_shift_reg[5]~4_combout $end
+$var wire 1 #! inst2|adc_mega_0|ADC_CTRL|addr_shift_reg~6_combout $end
+$var wire 1 $! inst2|adc_mega_0|ADC_CTRL|addr_shift_reg~5_combout $end
+$var wire 1 %! inst2|adc_mega_0|ADC_CTRL|addr_shift_reg~2_combout $end
+$var wire 1 &! dout~input_o $end
+$var wire 1 '! inst2|adc_mega_0|ADC_CTRL|shift_reg[0]~feeder_combout $end
+$var wire 1 (! inst2|adc_mega_0|ADC_CTRL|always7~0_combout $end
+$var wire 1 )! inst2|adc_mega_0|ADC_CTRL|shift_reg[1]~feeder_combout $end
+$var wire 1 *! inst2|adc_mega_0|ADC_CTRL|shift_reg[3]~feeder_combout $end
+$var wire 1 +! inst2|adc_mega_0|ADC_CTRL|shift_reg[5]~feeder_combout $end
+$var wire 1 ,! inst2|adc_mega_0|ADC_CTRL|shift_reg[6]~feeder_combout $end
+$var wire 1 -! inst2|adc_mega_0|ADC_CTRL|shift_reg[7]~feeder_combout $end
+$var wire 1 .! inst2|adc_mega_0|ADC_CTRL|reading0[8]~feeder_combout $end
+$var wire 1 /! inst2|adc_mega_0|ADC_CTRL|Decoder0~1_combout $end
+$var wire 1 0! inst2|adc_mega_0|ADC_CTRL|Decoder0~2_combout $end
+$var wire 1 1! inst2|adc_mega_0|CH0[8]~feeder_combout $end
+$var wire 1 2! inst2|adc_mega_0|ADC_CTRL|reading0[6]~feeder_combout $end
+$var wire 1 3! inst2|adc_mega_0|CH0[5]~feeder_combout $end
+$var wire 1 4! inst|LessThan1~2_combout $end
+$var wire 1 5! inst2|adc_mega_0|ADC_CTRL|shift_reg[8]~feeder_combout $end
+$var wire 1 6! inst2|adc_mega_0|ADC_CTRL|reading0[9]~feeder_combout $end
+$var wire 1 7! inst2|adc_mega_0|ADC_CTRL|reading0[0]~feeder_combout $end
+$var wire 1 8! inst2|adc_mega_0|CH0[0]~feeder_combout $end
+$var wire 1 9! inst2|adc_mega_0|ADC_CTRL|reading0[2]~feeder_combout $end
+$var wire 1 :! inst2|adc_mega_0|CH0[2]~feeder_combout $end
+$var wire 1 ;! inst|LessThan1~0_combout $end
+$var wire 1 <! inst|LessThan1~3_combout $end
+$var wire 1 =! inst2|adc_mega_0|ADC_CTRL|shift_reg[9]~feeder_combout $end
+$var wire 1 >! inst2|adc_mega_0|ADC_CTRL|reading0[10]~feeder_combout $end
+$var wire 1 ?! inst2|adc_mega_0|CH0[10]~feeder_combout $end
+$var wire 1 @! inst2|adc_mega_0|ADC_CTRL|shift_reg[10]~feeder_combout $end
+$var wire 1 A! inst2|adc_mega_0|ADC_CTRL|reading0[11]~feeder_combout $end
+$var wire 1 B! inst2|adc_mega_0|CH0[11]~feeder_combout $end
+$var wire 1 C! inst2|adc_mega_0|ADC_CTRL|reading1[6]~feeder_combout $end
+$var wire 1 D! inst2|adc_mega_0|ADC_CTRL|Decoder0~0_combout $end
+$var wire 1 E! inst2|adc_mega_0|CH1[6]~feeder_combout $end
+$var wire 1 F! inst2|adc_mega_0|ADC_CTRL|reading1[3]~feeder_combout $end
+$var wire 1 G! inst2|adc_mega_0|CH1[3]~feeder_combout $end
+$var wire 1 H! inst2|adc_mega_0|ADC_CTRL|reading1[4]~feeder_combout $end
+$var wire 1 I! inst2|adc_mega_0|ADC_CTRL|reading1[5]~feeder_combout $end
+$var wire 1 J! inst2|adc_mega_0|CH1[5]~feeder_combout $end
+$var wire 1 K! inst|Resultado[1]~1_combout $end
+$var wire 1 L! inst2|adc_mega_0|ADC_CTRL|reading1[7]~feeder_combout $end
+$var wire 1 M! inst|LessThan0~0_combout $end
+$var wire 1 N! inst|LessThan0~2_combout $end
+$var wire 1 O! inst|Resultado[1]~2_combout $end
+$var wire 1 P! inst|Resultado[1]~3_combout $end
+$var wire 1 Q! inst2|adc_mega_0|ADC_CTRL|reading0[3]~feeder_combout $end
+$var wire 1 R! inst|LessThan1~1_combout $end
+$var wire 1 S! inst2|adc_mega_0|ADC_CTRL|reading0[7]~feeder_combout $end
+$var wire 1 T! inst2|adc_mega_0|CH0[7]~feeder_combout $end
+$var wire 1 U! inst|Resultado[0]~6_combout $end
+$var wire 1 V! inst2|adc_mega_0|ADC_CTRL|reading1[9]~feeder_combout $end
+$var wire 1 W! inst2|adc_mega_0|CH1[9]~feeder_combout $end
+$var wire 1 X! inst2|adc_mega_0|ADC_CTRL|reading1[11]~feeder_combout $end
+$var wire 1 Y! inst2|adc_mega_0|CH1[11]~feeder_combout $end
+$var wire 1 Z! inst|Resultado[0]~4_combout $end
+$var wire 1 [! inst|Resultado[0]~5_combout $end
+$var wire 1 \! inst|Resultado[0]~7_combout $end
+$var wire 1 ]! inst2|adc_mega_0|CH1 [11] $end
+$var wire 1 ^! inst2|adc_mega_0|CH1 [10] $end
+$var wire 1 _! inst2|adc_mega_0|CH1 [9] $end
+$var wire 1 `! inst2|adc_mega_0|CH1 [8] $end
+$var wire 1 a! inst2|adc_mega_0|CH1 [7] $end
+$var wire 1 b! inst2|adc_mega_0|CH1 [6] $end
+$var wire 1 c! inst2|adc_mega_0|CH1 [5] $end
+$var wire 1 d! inst2|adc_mega_0|CH1 [4] $end
+$var wire 1 e! inst2|adc_mega_0|CH1 [3] $end
+$var wire 1 f! inst2|adc_mega_0|CH1 [2] $end
+$var wire 1 g! inst2|adc_mega_0|CH1 [1] $end
+$var wire 1 h! inst2|adc_mega_0|CH1 [0] $end
+$var wire 1 i! inst2|adc_mega_0|CH0 [11] $end
+$var wire 1 j! inst2|adc_mega_0|CH0 [10] $end
+$var wire 1 k! inst2|adc_mega_0|CH0 [9] $end
+$var wire 1 l! inst2|adc_mega_0|CH0 [8] $end
+$var wire 1 m! inst2|adc_mega_0|CH0 [7] $end
+$var wire 1 n! inst2|adc_mega_0|CH0 [6] $end
+$var wire 1 o! inst2|adc_mega_0|CH0 [5] $end
+$var wire 1 p! inst2|adc_mega_0|CH0 [4] $end
+$var wire 1 q! inst2|adc_mega_0|CH0 [3] $end
+$var wire 1 r! inst2|adc_mega_0|CH0 [2] $end
+$var wire 1 s! inst2|adc_mega_0|CH0 [1] $end
+$var wire 1 t! inst2|adc_mega_0|CH0 [0] $end
+$var wire 1 u! inst2|adc_mega_0|ADC_CTRL|shift_reg [10] $end
+$var wire 1 v! inst2|adc_mega_0|ADC_CTRL|shift_reg [9] $end
+$var wire 1 w! inst2|adc_mega_0|ADC_CTRL|shift_reg [8] $end
+$var wire 1 x! inst2|adc_mega_0|ADC_CTRL|shift_reg [7] $end
+$var wire 1 y! inst2|adc_mega_0|ADC_CTRL|shift_reg [6] $end
+$var wire 1 z! inst2|adc_mega_0|ADC_CTRL|shift_reg [5] $end
+$var wire 1 {! inst2|adc_mega_0|ADC_CTRL|shift_reg [4] $end
+$var wire 1 |! inst2|adc_mega_0|ADC_CTRL|shift_reg [3] $end
+$var wire 1 }! inst2|adc_mega_0|ADC_CTRL|shift_reg [2] $end
+$var wire 1 ~! inst2|adc_mega_0|ADC_CTRL|shift_reg [1] $end
+$var wire 1 !" inst2|adc_mega_0|ADC_CTRL|shift_reg [0] $end
+$var wire 1 "" inst2|adc_mega_0|ADC_CTRL|sclk_counter [3] $end
+$var wire 1 #" inst2|adc_mega_0|ADC_CTRL|sclk_counter [2] $end
+$var wire 1 $" inst2|adc_mega_0|ADC_CTRL|sclk_counter [1] $end
+$var wire 1 %" inst2|adc_mega_0|ADC_CTRL|sclk_counter [0] $end
+$var wire 1 &" inst2|adc_mega_0|ADC_CTRL|reading1 [11] $end
+$var wire 1 '" inst2|adc_mega_0|ADC_CTRL|reading1 [10] $end
+$var wire 1 (" inst2|adc_mega_0|ADC_CTRL|reading1 [9] $end
+$var wire 1 )" inst2|adc_mega_0|ADC_CTRL|reading1 [8] $end
+$var wire 1 *" inst2|adc_mega_0|ADC_CTRL|reading1 [7] $end
+$var wire 1 +" inst2|adc_mega_0|ADC_CTRL|reading1 [6] $end
+$var wire 1 ," inst2|adc_mega_0|ADC_CTRL|reading1 [5] $end
+$var wire 1 -" inst2|adc_mega_0|ADC_CTRL|reading1 [4] $end
+$var wire 1 ." inst2|adc_mega_0|ADC_CTRL|reading1 [3] $end
+$var wire 1 /" inst2|adc_mega_0|ADC_CTRL|reading1 [2] $end
+$var wire 1 0" inst2|adc_mega_0|ADC_CTRL|reading1 [1] $end
+$var wire 1 1" inst2|adc_mega_0|ADC_CTRL|reading1 [0] $end
+$var wire 1 2" inst2|adc_mega_0|ADC_CTRL|reading0 [11] $end
+$var wire 1 3" inst2|adc_mega_0|ADC_CTRL|reading0 [10] $end
+$var wire 1 4" inst2|adc_mega_0|ADC_CTRL|reading0 [9] $end
+$var wire 1 5" inst2|adc_mega_0|ADC_CTRL|reading0 [8] $end
+$var wire 1 6" inst2|adc_mega_0|ADC_CTRL|reading0 [7] $end
+$var wire 1 7" inst2|adc_mega_0|ADC_CTRL|reading0 [6] $end
+$var wire 1 8" inst2|adc_mega_0|ADC_CTRL|reading0 [5] $end
+$var wire 1 9" inst2|adc_mega_0|ADC_CTRL|reading0 [4] $end
+$var wire 1 :" inst2|adc_mega_0|ADC_CTRL|reading0 [3] $end
+$var wire 1 ;" inst2|adc_mega_0|ADC_CTRL|reading0 [2] $end
+$var wire 1 <" inst2|adc_mega_0|ADC_CTRL|reading0 [1] $end
+$var wire 1 =" inst2|adc_mega_0|ADC_CTRL|reading0 [0] $end
+$var wire 1 >" inst2|adc_mega_0|ADC_CTRL|next_addr [2] $end
+$var wire 1 ?" inst2|adc_mega_0|ADC_CTRL|next_addr [1] $end
+$var wire 1 @" inst2|adc_mega_0|ADC_CTRL|next_addr [0] $end
+$var wire 1 A" inst2|adc_mega_0|ADC_CTRL|counter [7] $end
+$var wire 1 B" inst2|adc_mega_0|ADC_CTRL|counter [6] $end
+$var wire 1 C" inst2|adc_mega_0|ADC_CTRL|counter [5] $end
+$var wire 1 D" inst2|adc_mega_0|ADC_CTRL|counter [4] $end
+$var wire 1 E" inst2|adc_mega_0|ADC_CTRL|counter [3] $end
+$var wire 1 F" inst2|adc_mega_0|ADC_CTRL|counter [2] $end
+$var wire 1 G" inst2|adc_mega_0|ADC_CTRL|counter [1] $end
+$var wire 1 H" inst2|adc_mega_0|ADC_CTRL|counter [0] $end
+$var wire 1 I" inst2|adc_mega_0|ADC_CTRL|address [2] $end
+$var wire 1 J" inst2|adc_mega_0|ADC_CTRL|address [1] $end
+$var wire 1 K" inst2|adc_mega_0|ADC_CTRL|address [0] $end
+$var wire 1 L" inst2|adc_mega_0|ADC_CTRL|addr_shift_reg [5] $end
+$var wire 1 M" inst2|adc_mega_0|ADC_CTRL|addr_shift_reg [4] $end
+$var wire 1 N" inst2|adc_mega_0|ADC_CTRL|addr_shift_reg [3] $end
+$var wire 1 O" inst2|adc_mega_0|ADC_CTRL|addr_shift_reg [2] $end
+$var wire 1 P" inst2|adc_mega_0|ADC_CTRL|addr_shift_reg [1] $end
+$var wire 1 Q" inst2|adc_mega_0|ADC_CTRL|addr_shift_reg [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x!
+x"
+1#
+0$
+1&
+1%
+0'
+0(
+1)
+x*
+1+
+1,
+1-
+0.
+0/
+00
+01
+12
+03
+04
+05
+06
+07
+08
+09
+0:
+0;
+0<
+0=
+0>
+x?
+1@
+0A
+0B
+1C
+1D
+1E
+0F
+0G
+0H
+1I
+1J
+1K
+1L
+0M
+0N
+0O
+0P
+0Q
+0R
+1S
+0T
+1U
+0V
+0W
+0X
+0Y
+1Z
+1[
+0\
+1]
+1^
+1_
+0`
+1a
+0b
+0c
+1d
+0e
+1f
+1g
+1h
+1i
+0j
+1k
+1l
+0m
+1n
+1o
+0p
+1q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+x{
+x|
+0}
+1~
+0!!
+0"!
+0#!
+0$!
+0%!
+x&!
+x'!
+1(!
+0)!
+0*!
+0+!
+0,!
+0-!
+0.!
+0/!
+00!
+01!
+02!
+03!
+04!
+05!
+06!
+x7!
+08!
+09!
+0:!
+1;!
+1<!
+0=!
+0>!
+0?!
+0@!
+0A!
+0B!
+0C!
+0D!
+0E!
+0F!
+0G!
+0H!
+0I!
+0J!
+0K!
+0L!
+0M!
+0N!
+0O!
+1P!
+0Q!
+0R!
+0S!
+0T!
+0U!
+0V!
+0W!
+0X!
+0Y!
+1Z!
+0[!
+1\!
+0h!
+0g!
+0f!
+0e!
+0d!
+0c!
+0b!
+0a!
+0`!
+0_!
+0^!
+0]!
+0t!
+0s!
+0r!
+0q!
+0p!
+0o!
+0n!
+0m!
+0l!
+0k!
+0j!
+0i!
+0!"
+0~!
+0}!
+0|!
+0{!
+0z!
+0y!
+0x!
+0w!
+0v!
+0u!
+0%"
+0$"
+0#"
+0""
+01"
+00"
+0/"
+0."
+0-"
+0,"
+0+"
+0*"
+0)"
+0("
+0'"
+0&"
+0="
+0<"
+0;"
+0:"
+09"
+08"
+07"
+06"
+05"
+04"
+03"
+02"
+0@"
+0?"
+0>"
+0H"
+0G"
+0F"
+0E"
+0D"
+0C"
+0B"
+0A"
+0K"
+0J"
+0I"
+0Q"
+0P"
+0O"
+0N"
+0M"
+0L"
+$end
+#1000000

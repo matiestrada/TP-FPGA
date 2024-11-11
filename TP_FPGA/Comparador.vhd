@@ -12,7 +12,7 @@ end comparador;
 
 architecture Behavioral of comparador is
 	
-	constant Umbral : std_LOGIC_VECTOR(11 downto 0) := "001001011000";
+	constant Umbral : std_LOGIC_VECTOR(11 downto 0) := "001111101000";
 
 begin
     process(CHI, CHD)
