@@ -1,18 +1,37 @@
 
-State Machine - |ADC_tutorialV2|subsistema_1:inst4|fstate
+State Machine - |Main_Esquematico|subsistema_3:inst10|fstate
+Name fstate.S00 fstate.S32 fstate.S31 fstate.S30 fstate.S23 fstate.S22 fstate.S21 fstate.S20 fstate.S13 fstate.S12 fstate.S11 fstate.S10 fstate.S03 fstate.S02 fstate.S01 fstate.S33 
+fstate.S33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+fstate.S01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+fstate.S02 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+fstate.S03 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+fstate.S10 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+fstate.S11 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+fstate.S12 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+fstate.S13 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+fstate.S20 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+fstate.S21 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+fstate.S22 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+fstate.S23 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+fstate.S30 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+fstate.S31 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+fstate.S32 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+fstate.S00 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Main_Esquematico|subsistema_1:centrado|fstate
 Name fstate.Pared_der fstate.Pared_Izq fstate.Centrado fstate.Idle 
 fstate.Idle 0 0 0 0 
 fstate.Centrado 0 0 1 1 
 fstate.Pared_Izq 0 1 0 1 
 fstate.Pared_der 1 0 0 1 
 
-State Machine - |ADC_tutorialV2|giro:inst7|fstate
+State Machine - |Main_Esquematico|giro:inst7|fstate
 Name fstate.giro_der fstate.giro_izq fstate.idle 
 fstate.idle 0 0 0 
 fstate.giro_izq 0 1 1 
 fstate.giro_der 1 0 1 
 
-State Machine - |ADC_tutorialV2|adc:inst1|adc_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL|currState
+State Machine - |Main_Esquematico|adc:inst1|adc_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL|currState
 Name currState.doneState currState.transState currState.waitState currState.resetState currState.pauseState 
 currState.resetState 0 0 0 0 0 
 currState.waitState 0 0 1 1 0 

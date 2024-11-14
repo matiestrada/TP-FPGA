@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE22F17C6
-set_global_assignment -name TOP_LEVEL_ENTITY ADC_tutorialV2
+set_global_assignment -name TOP_LEVEL_ENTITY Main_Esquematico
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:07:09  NOVEMBER 07, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -73,7 +73,8 @@ set_location_assignment PIN_F13 -to M1D
 set_location_assignment PIN_T13 -to M1I
 set_location_assignment PIN_R13 -to veld
 set_location_assignment PIN_T12 -to veli
-set_global_assignment -name BDF_FILE Bloque_ADC_Controller/ADC_tutorialV2.bdf
+set_global_assignment -name BDF_FILE Bloque_ADC_Controller/Main_Esquematico.bdf
+set_global_assignment -name VHDL_FILE subsistema_3.vhd
 set_global_assignment -name VHDL_FILE subsistema_1.vhd
 set_global_assignment -name VHDL_FILE Comparador.vhd
 set_global_assignment -name VHDL_FILE giro.vhd
@@ -82,11 +83,12 @@ set_global_assignment -name VERILOG_FILE Bloque_ADC_Controller/adc_adc_mega_0.v
 set_global_assignment -name VHDL_FILE Bloque_ADC_Controller/adc.vhd
 set_global_assignment -name BDF_FILE Bloque_ADC_Controller/ADC_tutorial.bdf
 set_global_assignment -name QIP_FILE PLL.qip
-set_global_assignment -name VHDL_FILE led_display.vhd
 set_global_assignment -name SMF_FILE giro.smf
 set_global_assignment -name VHDL_FILE contador.vhd
 set_global_assignment -name SIGNALTAP_FILE stp1.stp
+set_global_assignment -name SMF_FILE subsistema_3.smf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name SMF_FILE Bloque_ADC_Controller/Detector_Cambio_Casilla.smf

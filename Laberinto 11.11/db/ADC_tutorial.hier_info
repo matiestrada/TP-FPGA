@@ -1,4 +1,4 @@
-|ADC_tutorialV2
+|Main_Esquematico
 ADC_DIN <= adc:inst1.ADC_DIN
 clk0 => PLL:inst.inclk0
 areset => inst3.IN0
@@ -11,17 +11,9 @@ M1D <= inst14.DB_MAX_OUTPUT_PORT_TYPE
 M0D <= inst15.DB_MAX_OUTPUT_PORT_TYPE
 veld <= <VCC>
 veli <= <VCC>
-leds[0] <= led_display:inst2.leds[0]
-leds[1] <= led_display:inst2.leds[1]
-leds[2] <= led_display:inst2.leds[2]
-leds[3] <= led_display:inst2.leds[3]
-leds[4] <= led_display:inst2.leds[4]
-leds[5] <= led_display:inst2.leds[5]
-leds[6] <= led_display:inst2.leds[6]
-leds[7] <= led_display:inst2.leds[7]
 
 
-|ADC_tutorialV2|adc:inst1
+|Main_Esquematico|adc:inst1
 CLOCK => adc_adc_mega_0:adc_mega_0.CLOCK
 ADC_SCLK <= adc_adc_mega_0:adc_mega_0.ADC_SCLK
 ADC_CS_N <= adc_adc_mega_0:adc_mega_0.ADC_CS_N
@@ -126,7 +118,7 @@ CH7[11] <= adc_adc_mega_0:adc_mega_0.CH7[11]
 RESET => adc_adc_mega_0:adc_mega_0.RESET
 
 
-|ADC_tutorialV2|adc:inst1|adc_adc_mega_0:adc_mega_0
+|Main_Esquematico|adc:inst1|adc_adc_mega_0:adc_mega_0
 CLOCK => CLOCK.IN1
 RESET => RESET.IN1
 ADC_CS_N <= altera_up_avalon_adv_adc:ADC_CTRL.port4
@@ -231,7 +223,7 @@ CH7[10] <= CH7[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 CH7[11] <= CH7[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ADC_tutorialV2|adc:inst1|adc_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL
+|Main_Esquematico|adc:inst1|adc_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL
 clock => next_addr[0].CLK
 clock => next_addr[1].CLK
 clock => next_addr[2].CLK
@@ -490,14 +482,14 @@ reading7[10] <= reading7[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 reading7[11] <= reading7[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ADC_tutorialV2|PLL:inst
+|Main_Esquematico|PLL:inst
 areset => altpll:altpll_component.areset
 inclk0 => altpll:altpll_component.inclk[0]
 c0 <= altpll:altpll_component.clk[0]
 locked <= altpll:altpll_component.locked
 
 
-|ADC_tutorialV2|PLL:inst|altpll:altpll_component
+|Main_Esquematico|PLL:inst|altpll:altpll_component
 inclk[0] => PLL_altpll:auto_generated.inclk[0]
 inclk[1] => PLL_altpll:auto_generated.inclk[1]
 fbin => ~NO_FANOUT~
@@ -557,7 +549,7 @@ fref <= <GND>
 icdrclk <= <GND>
 
 
-|ADC_tutorialV2|PLL:inst|altpll:altpll_component|PLL_altpll:auto_generated
+|Main_Esquematico|PLL:inst|altpll:altpll_component|PLL_altpll:auto_generated
 areset => pll_lock_sync.ACLR
 areset => pll1.ARESET
 clk[0] <= pll1.CLK
@@ -570,7 +562,7 @@ inclk[1] => pll1.CLK1
 locked <= locked.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ADC_tutorialV2|giro:inst7
+|Main_Esquematico|giro:inst7
 reset => reg_fstate.idle.OUTPUTSELECT
 reset => reg_fstate.giro_izq.OUTPUTSELECT
 reset => reg_fstate.giro_der.OUTPUTSELECT
@@ -597,7 +589,7 @@ M0D <= M0D.DB_MAX_OUTPUT_PORT_TYPE
 hab_cont <= hab_cont.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ADC_tutorialV2|contador_7:inst8
+|Main_Esquematico|contador_7:inst8
 clk => fin~reg0.CLK
 clk => cnt[0].CLK
 clk => cnt[1].CLK
@@ -640,12 +632,11 @@ hab_cont => cnt[0].ENA
 fin <= fin~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ADC_tutorialV2|subsistema_1:inst4
+|Main_Esquematico|subsistema_1:centrado
 reset => reg_fstate.Idle.OUTPUTSELECT
 reset => reg_fstate.Centrado.OUTPUTSELECT
 reset => reg_fstate.Pared_Izq.OUTPUTSELECT
 reset => reg_fstate.Pared_der.OUTPUTSELECT
-reset => M1I.OUTPUTSELECT
 reset => M0I.OUTPUTSELECT
 reset => M0D.OUTPUTSELECT
 clock => fstate~1.DATAIN
@@ -668,13 +659,13 @@ D => process_1.IN1
 D => process_1.IN1
 D => process_1.IN1
 D => process_1.IN1
-M1I <= M1I.DB_MAX_OUTPUT_PORT_TYPE
+M1I <= <GND>
 M0I <= M0I.DB_MAX_OUTPUT_PORT_TYPE
 M1D <= <GND>
 M0D <= M0D.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ADC_tutorialV2|comparador:inst6
+|Main_Esquematico|comparador:inst6
 CHI[0] => LessThan1.IN24
 CHI[0] => LessThan3.IN24
 CHI[1] => LessThan1.IN23
@@ -727,104 +718,43 @@ I <= I.DB_MAX_OUTPUT_PORT_TYPE
 D <= D.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ADC_tutorialV2|led_display:inst2
-clk => select_channel.CLK
-clk => counter[0].CLK
-clk => counter[1].CLK
-clk => counter[2].CLK
-clk => counter[3].CLK
-clk => counter[4].CLK
-clk => counter[5].CLK
-clk => counter[6].CLK
-clk => counter[7].CLK
-clk => counter[8].CLK
-clk => counter[9].CLK
-clk => counter[10].CLK
-clk => counter[11].CLK
-clk => counter[12].CLK
-clk => counter[13].CLK
-clk => counter[14].CLK
-clk => counter[15].CLK
-clk => counter[16].CLK
-clk => counter[17].CLK
-clk => counter[18].CLK
-clk => counter[19].CLK
-clk => counter[20].CLK
-clk => counter[21].CLK
-clk => counter[22].CLK
-clk => counter[23].CLK
-clk => counter[24].CLK
-clk => counter[25].CLK
-clk => counter[26].CLK
-clk => counter[27].CLK
-clk => counter[28].CLK
-clk => counter[29].CLK
-clk => counter[30].CLK
-clk => counter[31].CLK
-reset => select_channel.ACLR
-reset => counter[0].ACLR
-reset => counter[1].ACLR
-reset => counter[2].ACLR
-reset => counter[3].ACLR
-reset => counter[4].ACLR
-reset => counter[5].ACLR
-reset => counter[6].ACLR
-reset => counter[7].ACLR
-reset => counter[8].ACLR
-reset => counter[9].ACLR
-reset => counter[10].ACLR
-reset => counter[11].ACLR
-reset => counter[12].ACLR
-reset => counter[13].ACLR
-reset => counter[14].ACLR
-reset => counter[15].ACLR
-reset => counter[16].ACLR
-reset => counter[17].ACLR
-reset => counter[18].ACLR
-reset => counter[19].ACLR
-reset => counter[20].ACLR
-reset => counter[21].ACLR
-reset => counter[22].ACLR
-reset => counter[23].ACLR
-reset => counter[24].ACLR
-reset => counter[25].ACLR
-reset => counter[26].ACLR
-reset => counter[27].ACLR
-reset => counter[28].ACLR
-reset => counter[29].ACLR
-reset => counter[30].ACLR
-reset => counter[31].ACLR
-channel1[0] => ~NO_FANOUT~
-channel1[1] => ~NO_FANOUT~
-channel1[2] => ~NO_FANOUT~
-channel1[3] => ~NO_FANOUT~
-channel1[4] => leds.DATAB
-channel1[5] => leds.DATAB
-channel1[6] => leds.DATAB
-channel1[7] => leds.DATAB
-channel1[8] => leds.DATAB
-channel1[9] => leds.DATAB
-channel1[10] => leds.DATAB
-channel1[11] => leds.DATAB
-channel2[0] => ~NO_FANOUT~
-channel2[1] => ~NO_FANOUT~
-channel2[2] => ~NO_FANOUT~
-channel2[3] => ~NO_FANOUT~
-channel2[4] => leds.DATAA
-channel2[5] => leds.DATAA
-channel2[6] => leds.DATAA
-channel2[7] => leds.DATAA
-channel2[8] => leds.DATAA
-channel2[9] => leds.DATAA
-channel2[10] => leds.DATAA
-channel2[11] => leds.DATAA
-leds[0] <= leds.DB_MAX_OUTPUT_PORT_TYPE
-leds[1] <= leds.DB_MAX_OUTPUT_PORT_TYPE
-leds[2] <= leds.DB_MAX_OUTPUT_PORT_TYPE
-leds[3] <= leds.DB_MAX_OUTPUT_PORT_TYPE
-leds[4] <= leds.DB_MAX_OUTPUT_PORT_TYPE
-leds[5] <= leds.DB_MAX_OUTPUT_PORT_TYPE
-leds[6] <= leds.DB_MAX_OUTPUT_PORT_TYPE
-leds[7] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+|Main_Esquematico|subsistema_3:inst10
+reset => reg_fstate.S00.OUTPUTSELECT
+reset => reg_fstate.S01.OUTPUTSELECT
+reset => reg_fstate.S02.OUTPUTSELECT
+reset => reg_fstate.S03.OUTPUTSELECT
+reset => reg_fstate.S10.OUTPUTSELECT
+reset => reg_fstate.S11.OUTPUTSELECT
+reset => reg_fstate.S12.OUTPUTSELECT
+reset => reg_fstate.S13.OUTPUTSELECT
+reset => reg_fstate.S20.OUTPUTSELECT
+reset => reg_fstate.S21.OUTPUTSELECT
+reset => reg_fstate.S22.OUTPUTSELECT
+reset => reg_fstate.S23.OUTPUTSELECT
+reset => reg_fstate.S30.OUTPUTSELECT
+reset => reg_fstate.S31.OUTPUTSELECT
+reset => reg_fstate.S32.OUTPUTSELECT
+reset => reg_fstate.S33.OUTPUTSELECT
+reset => pos.OUTPUTSELECT
+reset => pos.OUTPUTSELECT
+reset => pos.OUTPUTSELECT
+reset => pos.OUTPUTSELECT
+clock => fstate~1.DATAIN
+x => process_1.IN0
+x => process_1.IN0
+x => process_1.IN0
+x => process_1.IN0
+y => process_1.IN1
+y => process_1.IN1
+y => process_1.IN1
+y => process_1.IN1
+cambio => process_1.IN1
+cambio => process_1.IN1
+cambio => process_1.IN1
+cambio => process_1.IN1
+pos[0] <= pos.DB_MAX_OUTPUT_PORT_TYPE
+pos[1] <= pos.DB_MAX_OUTPUT_PORT_TYPE
+pos[2] <= pos.DB_MAX_OUTPUT_PORT_TYPE
+pos[3] <= pos.DB_MAX_OUTPUT_PORT_TYPE
 
 

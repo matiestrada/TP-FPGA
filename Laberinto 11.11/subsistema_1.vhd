@@ -116,11 +116,11 @@ BEGIN
 
                     M1D <= '0';
 
-                    M1I <= '1';
+                    M1I <= '0';
 
                     M0D <= '0';
 
-                    M0I <= '0';
+                    M0I <= '1';
                 WHEN Pared_der =>
                     IF ((FW = '0')) THEN
                         reg_fstate <= Idle;

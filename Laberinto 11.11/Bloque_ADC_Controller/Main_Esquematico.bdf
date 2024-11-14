@@ -729,7 +729,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1480 752 1648 896)
+	(rect 1608 744 1776 888)
 	(text "subsistema_3" (rect 5 0 73 12)(font "Arial" ))
 	(text "inst10" (rect 8 128 37 140)(font "Arial" ))
 	(port
@@ -821,28 +821,28 @@ applicable agreement for further details.
 		(pt 144 32)
 		(output)
 		(text "M1I" (rect 0 0 17 12)(font "Arial" ))
-		(text "M1I" (rect 109 27 123 39)(font "Arial" ))
+		(text "M1I" (rect 109 27 126 39)(font "Arial" ))
 		(line (pt 144 32)(pt 128 32))
 	)
 	(port
 		(pt 144 48)
 		(output)
 		(text "M0I" (rect 0 0 17 12)(font "Arial" ))
-		(text "M0I" (rect 109 43 123 55)(font "Arial" ))
+		(text "M0I" (rect 109 43 126 55)(font "Arial" ))
 		(line (pt 144 48)(pt 128 48))
 	)
 	(port
 		(pt 144 64)
 		(output)
 		(text "M1D" (rect 0 0 22 12)(font "Arial" ))
-		(text "M1D" (rect 105 59 123 71)(font "Arial" ))
+		(text "M1D" (rect 105 59 127 71)(font "Arial" ))
 		(line (pt 144 64)(pt 128 64))
 	)
 	(port
 		(pt 144 80)
 		(output)
 		(text "M0D" (rect 0 0 22 12)(font "Arial" ))
-		(text "M0D" (rect 105 75 123 87)(font "Arial" ))
+		(text "M0D" (rect 105 75 127 87)(font "Arial" ))
 		(line (pt 144 80)(pt 128 80))
 	)
 	(drawing
