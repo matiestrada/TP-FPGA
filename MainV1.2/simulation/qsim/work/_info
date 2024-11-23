@@ -17,13 +17,12 @@ r1
 31
 Z9 !s90 -work|work|ADC_tutorial.vo|
 Z10 o-work work -O0
-!i10b 1
-!s85 0
 Z11 !s108 1732211863.689000
 Z12 !s107 ADC_tutorial.vo|
+!i10b 1
+!s85 0
 !s101 -O0
 vcontador_10_vlg_check_tst
-!i10b 1
 Z13 !s100 4zg80gU0M;ahg4_emf0Vm3
 Z14 Ie9aZN01n66a[?Qf<jiOJd1
 Z15 VdcVDGz6O?HS^>So3`=6cF0
@@ -34,15 +33,15 @@ Z17 FADC_tutorial.vt
 L0 61
 R8
 r1
-!s85 0
 31
 Z18 !s108 1732211863.801000
 Z19 !s107 ADC_tutorial.vt|
 Z20 !s90 -work|work|ADC_tutorial.vt|
-!s101 -O0
 R10
-vcontador_10_vlg_sample_tst
 !i10b 1
+!s85 0
+!s101 -O0
+vcontador_10_vlg_sample_tst
 Z21 !s100 FehIH]hVbImKe7?`?84BR1
 Z22 IW;Wbh9bjn_kNjL;@BGZD61
 Z23 VFj>RXH7Gm6M56860T:1;>2
@@ -53,38 +52,39 @@ R17
 L0 29
 R8
 r1
-!s85 0
 31
 R18
 R19
 R20
-!s101 -O0
 R10
-vcontador_10_vlg_vec_tst
 !i10b 1
-!s100 5JWH:H:8gi3HJ2cWAG]V:3
-I[g6kGCA]BcYDLGS;J_CDQ1
-Z24 V9[@2;=`W?gU_9TNW4N=GM1
+!s85 0
+!s101 -O0
+vcontador_10_vlg_vec_tst
+Z24 I[g6kGCA]BcYDLGS;J_CDQ1
+Z25 V9[@2;=`W?gU_9TNW4N=GM1
 R4
 R5
 R16
 R17
-Z25 L0 156
+Z26 L0 156
 R8
 r1
-!s85 0
 31
 R18
 R19
 R20
-!s101 -O0
 R10
+Z27 !s100 5JWH:H:8gi3HJ2cWAG]V:3
+!i10b 1
+!s85 0
+!s101 -O0
 vcontador_7600
-Z26 !s100 RZK4nOEWL2ej4JNYAA9Ql3
-Z27 IT[2DH0=oF;A>F2h6lAjPi1
-Z28 VI2DNi9:f3jmA^ZdKm;35H3
-Z29 dC:\Users\Sorteito\Documents\GitHub\TP-FPGA\Main\simulation\qsim
-Z30 w1731620499
+Z28 !s100 RZK4nOEWL2ej4JNYAA9Ql3
+Z29 IT[2DH0=oF;A>F2h6lAjPi1
+Z30 VI2DNi9:f3jmA^ZdKm;35H3
+Z31 dC:\Users\Sorteito\Documents\GitHub\TP-FPGA\Main\simulation\qsim
+Z32 w1731620499
 R6
 R7
 L0 31
@@ -93,74 +93,74 @@ r1
 31
 R9
 R10
-Z31 !s108 1731620499.785000
+Z33 !s108 1731620499.785000
 R12
 !i10b 1
 !s85 0
 !s101 -O0
 vcontador_7600_vlg_check_tst
-Z32 !s100 1GKfCd4m_XEHDIkY8D38a1
-Z33 ILRbdzgdC>56kJgdO3k_6f0
-Z34 V=TcQW^eXA]oVUBJT_iZaK1
-R29
-Z35 w1731620498
+Z34 !s100 1GKfCd4m_XEHDIkY8D38a1
+Z35 ILRbdzgdC>56kJgdO3k_6f0
+Z36 V=TcQW^eXA]oVUBJT_iZaK1
+R31
+Z37 w1731620498
 R16
 R17
 L0 61
 R8
 r1
 31
-Z36 !s108 1731620499.911000
-Z37 !s107 ADC_tutorial.vt|
+Z38 !s108 1731620499.911000
+R19
 R20
 R10
 !i10b 1
 !s85 0
 !s101 -O0
 vcontador_7600_vlg_sample_tst
-Z38 !s100 i;8PU>>_b7i7gCKYE5eNJ2
-Z39 Ib0kzACi5:DjJa61KDKm=o3
-Z40 V76n?R7OnZ:VCLnQBZ>@Ab1
-R29
-R35
+Z39 !s100 i;8PU>>_b7i7gCKYE5eNJ2
+Z40 Ib0kzACi5:DjJa61KDKm=o3
+Z41 V76n?R7OnZ:VCLnQBZ>@Ab1
+R31
+R37
 R16
 R17
 L0 29
 R8
 r1
 31
-R36
-R37
+R38
+R19
 R20
 R10
 !i10b 1
 !s85 0
 !s101 -O0
 vcontador_7600_vlg_vec_tst
-Z41 IzHM^YTd@:;DdEKNPX2Y=R1
-Z42 Voe<>IF<=E>@6MAae?8Rdb0
-R29
-R35
+Z42 IzHM^YTd@:;DdEKNPX2Y=R1
+Z43 Voe<>IF<=E>@6MAae?8Rdb0
+R31
+R37
 R16
 R17
-R25
+R26
 R8
 r1
 31
-R36
-R37
+R38
+R19
 R20
 R10
-Z43 !s100 9bzP_3@WVhWG2z>RVE=MN0
+Z44 !s100 9bzP_3@WVhWG2z>RVE=MN0
 !i10b 1
 !s85 0
 !s101 -O0
 vdelay_5000
-Z44 !s100 3:@AT`z`_CLQ^3Z7U9ZK`2
-Z45 IGmREVOiij4=mbCcILoN013
-Z46 V>MB>`mPfbNAPP4lE;=MN<0
-Z47 dC:\Users\LSC\Desktop\Main\simulation\qsim
-Z48 w1731696384
+Z45 !s100 3:@AT`z`_CLQ^3Z7U9ZK`2
+Z46 IGmREVOiij4=mbCcILoN013
+Z47 V>MB>`mPfbNAPP4lE;=MN<0
+Z48 dC:\Users\LSC\Desktop\Main\simulation\qsim
+Z49 w1731696384
 R6
 R7
 L0 31
@@ -169,65 +169,141 @@ r1
 31
 R9
 R10
-Z49 !s108 1731696385.097000
+Z50 !s108 1731696385.097000
 R12
 !i10b 1
 !s85 0
 !s101 -O0
 vdelay_5000_vlg_check_tst
-Z50 !s100 joV4N?i:bK:hISQYMRm8i3
-Z51 IM1dLPgh=ZDP;M2@1DR^D72
-Z52 Ve=_neOJ>dE4<:EOPIUlSY0
-R47
-Z53 w1731696382
+Z51 !s100 joV4N?i:bK:hISQYMRm8i3
+Z52 IM1dLPgh=ZDP;M2@1DR^D72
+Z53 Ve=_neOJ>dE4<:EOPIUlSY0
+R48
+Z54 w1731696382
 R16
 R17
 L0 61
 R8
 r1
 31
-Z54 !s108 1731696385.660000
-R37
+Z55 !s108 1731696385.660000
+R19
 R20
 R10
 !i10b 1
 !s85 0
 !s101 -O0
 vdelay_5000_vlg_sample_tst
-Z55 !s100 L31@i;NOfRo1V^12[nj2=0
-Z56 IT`HVX<gSIJ3nKWDN7;70A0
-Z57 V?R`ga;SmbkMjlTC6RZ7^>2
-R47
-R53
+Z56 !s100 L31@i;NOfRo1V^12[nj2=0
+Z57 IT`HVX<gSIJ3nKWDN7;70A0
+Z58 V?R`ga;SmbkMjlTC6RZ7^>2
+R48
+R54
 R16
 R17
 L0 29
 R8
 r1
 31
-R54
-R37
+R55
+R19
 R20
 R10
 !i10b 1
 !s85 0
 !s101 -O0
 vdelay_5000_vlg_vec_tst
-Z58 IS8gK_^L1mB0M0o;Y[Yj9Z3
-Z59 VW?zQ7PF;alkJ2jfgQVnR30
-R47
-R53
+Z59 IS8gK_^L1mB0M0o;Y[Yj9Z3
+Z60 VW?zQ7PF;alkJ2jfgQVnR30
+R48
+R54
 R16
 R17
-R25
+R26
 R8
 r1
 31
-R54
-R37
+R55
+R19
 R20
 R10
-Z60 !s100 gkQNQ?dnTlGIYdjUJK?4A0
+Z61 !s100 gkQNQ?dnTlGIYdjUJK?4A0
 !i10b 1
 !s85 0
 !s101 -O0
+vfloodfill_para_simular
+Z62 I[b<H0ZSL_kjTHj;G927<c0
+Z63 V[LiOzb<VO0[4LZWBh3IhN1
+R4
+Z64 w1732323838
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+!i10b 1
+Z65 !s100 DD27TV[N]BcBI4>FAQTTh3
+!s85 0
+Z66 !s108 1732323839.320000
+R12
+!s101 -O0
+vfloodfill_para_simular_vlg_check_tst
+!i10b 1
+Z67 !s100 SQf@@D4_O;Em9dVKcSYY^3
+Z68 I`FW3BPmmbmS6@BW8kj`Ak1
+Z69 VZYiLF1ga^7:l2L0_9OSmg3
+R4
+R64
+R16
+R17
+L0 65
+R8
+r1
+!s85 0
+31
+Z70 !s108 1732323839.399000
+Z71 !s107 ADC_tutorial.vt|
+R20
+!s101 -O0
+R10
+vfloodfill_para_simular_vlg_sample_tst
+!i10b 1
+Z72 !s100 3XLBBjhz;P93Y[Mha_<PK1
+Z73 I6`Ze0JPnUiC=U9J:V][OQ0
+Z74 V9=TF@K6IKG2@`>kY8MQ5m3
+R4
+R64
+R16
+R17
+L0 29
+R8
+r1
+!s85 0
+31
+R70
+R71
+R20
+!s101 -O0
+R10
+vfloodfill_para_simular_vlg_vec_tst
+!i10b 1
+Z75 !s100 mcCFi:?XhbI?G8DAS8Ojb0
+Z76 I4EKhGz0V3m;22nL1mk`R[0
+Z77 Vi@[gNG[P<761EimH_MKT32
+R4
+R64
+R16
+R17
+Z78 L0 284
+R8
+r1
+!s85 0
+31
+R70
+R71
+R20
+!s101 -O0
+R10
