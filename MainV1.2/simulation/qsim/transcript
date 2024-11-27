@@ -2,30 +2,30 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module pared
+# -- Compiling module floodfill_para_simular
 # 
 # Top level modules:
-# 	pared
+# 	floodfill_para_simular
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module pared_vlg_sample_tst
-# -- Compiling module pared_vlg_check_tst
-# -- Compiling module pared_vlg_vec_tst
+# -- Compiling module floodfill_para_simular_vlg_sample_tst
+# -- Compiling module floodfill_para_simular_vlg_check_tst
+# -- Compiling module floodfill_para_simular_vlg_vec_tst
 # 
 # Top level modules:
-# 	pared_vlg_vec_tst
-# vsim -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.pared_vlg_vec_tst 
-# Loading work.pared_vlg_vec_tst
-# Loading work.pared
+# 	floodfill_para_simular_vlg_vec_tst
+# vsim -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.floodfill_para_simular_vlg_vec_tst 
+# Loading work.floodfill_para_simular_vlg_vec_tst
+# Loading work.floodfill_para_simular
+# Loading cycloneive_ver.cycloneive_lcell_comb
 # Loading cycloneive_ver.cycloneive_io_ibuf
-# Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_clkctrl
 # Loading cycloneive_ver.cycloneive_mux41
 # Loading cycloneive_ver.cycloneive_ena_reg
-# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading cycloneive_ver.cycloneive_io_obuf
 # Loading altera_ver.dffeas
-# Loading work.pared_vlg_sample_tst
-# Loading work.pared_vlg_check_tst
+# Loading work.floodfill_para_simular_vlg_sample_tst
+# Loading work.floodfill_para_simular_vlg_check_tst
 # Loading altera_ver.PRIM_GDFF_LOW
 # Simulation passed !
-# ** Note: $finish    : ADC_tutorial.vt(1287)
-#    Time: 1 us  Iteration: 0  Instance: /pared_vlg_vec_tst/tb_out
+# ** Note: $finish    : ADC_tutorial.vt(2063)
+#    Time: 1 us  Iteration: 0  Instance: /floodfill_para_simular_vlg_vec_tst/tb_out

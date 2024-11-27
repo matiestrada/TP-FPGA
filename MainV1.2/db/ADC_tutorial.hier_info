@@ -1,69 +1,131 @@
 |floodfill_para_simular
-Cout <= sumador_4bits:inst19.Cout
-P_Abajo[0] => mux_2x1_4bit:inst10.d0[0]
-P_Abajo[1] => mux_2x1_4bit:inst10.d0[1]
-P_Abajo[2] => mux_2x1_4bit:inst10.d0[2]
-P_Abajo[3] => mux_2x1_4bit:inst10.d0[3]
-P_Arriba[0] => mux_2x1_4bit:inst.d0[0]
-P_Arriba[1] => mux_2x1_4bit:inst.d0[1]
-P_Arriba[2] => mux_2x1_4bit:inst.d0[2]
-P_Arriba[3] => mux_2x1_4bit:inst.d0[3]
-P_Der[0] => mux_2x1_4bit:inst9.d0[0]
-P_Der[1] => mux_2x1_4bit:inst9.d0[1]
-P_Der[2] => mux_2x1_4bit:inst9.d0[2]
-P_Der[3] => mux_2x1_4bit:inst9.d0[3]
-P_Izq[0] => mux_2x1_4bit:inst12.d0[0]
-P_Izq[1] => mux_2x1_4bit:inst12.d0[1]
-P_Izq[2] => mux_2x1_4bit:inst12.d0[2]
-P_Izq[3] => mux_2x1_4bit:inst12.d0[3]
-mas_1[0] => sumador_4bits:inst19.B[0]
-mas_1[1] => sumador_4bits:inst19.B[1]
-mas_1[2] => sumador_4bits:inst19.B[2]
-mas_1[3] => sumador_4bits:inst19.B[3]
-Mi_Peso[0] <= sumador_4bits:inst19.S[0]
-Mi_Peso[1] <= sumador_4bits:inst19.S[1]
-Mi_Peso[2] <= sumador_4bits:inst19.S[2]
-Mi_Peso[3] <= sumador_4bits:inst19.S[3]
-Pos_Min[0] <= Comparador_Celda:inst7.pos[0]
-Pos_Min[1] <= Comparador_Celda:inst7.pos[1]
+Dir_Min12[0] <= Comparador_Celda:inst168.pos[0]
+Dir_Min12[1] <= Comparador_Celda:inst168.pos[1]
+clk => FFD_4bits:inst260.clk
+clk => FFD_4bits:inst256.clk
+clk => FFD_4bits:inst297.clk
+clk => FFD_4bits:inst313.clk
+clk => FFD_4bits:inst261.clk
+clk => FFD_4bits:inst257.clk
+clk => FFD_4bits:inst258.clk
+clk => FFD_4bits:inst265.clk
+clk => FFD_4bits:inst329.clk
+clk => FFD_4bits:inst393.clk
+clk => FFD_4bits:inst409.clk
+clk => FFD_4bits:inst345.clk
+clk => FFD_4bits:inst281.clk
+clk => FFD_4bits:inst259.clk
+clk => FFD_4bits:inst377.clk
+reset => FFD_4bits:inst260.reset
+reset => FFD_4bits:inst256.reset
+reset => FFD_4bits:inst297.reset
+reset => FFD_4bits:inst313.reset
+reset => FFD_4bits:inst261.reset
+reset => FFD_4bits:inst257.reset
+reset => FFD_4bits:inst258.reset
+reset => FFD_4bits:inst265.reset
+reset => FFD_4bits:inst329.reset
+reset => FFD_4bits:inst393.reset
+reset => FFD_4bits:inst409.reset
+reset => FFD_4bits:inst345.reset
+reset => FFD_4bits:inst281.reset
+reset => FFD_4bits:inst259.reset
+reset => FFD_4bits:inst377.reset
+Dir_Min13[0] <= Comparador_Celda:inst183.pos[0]
+Dir_Min13[1] <= Comparador_Celda:inst183.pos[1]
+Dir_Min14[0] <= Comparador_Celda:inst198.pos[0]
+Dir_Min14[1] <= Comparador_Celda:inst198.pos[1]
+Dir_Min15[0] <= Comparador_Celda:inst213.pos[0]
+Dir_Min15[1] <= Comparador_Celda:inst213.pos[1]
+Dir_Min2[0] <= Comparador_Celda:inst392.pos[0]
+Dir_Min2[1] <= Comparador_Celda:inst392.pos[1]
+Dir_Min3[0] <= Comparador_Celda:inst408.pos[0]
+Dir_Min3[1] <= Comparador_Celda:inst408.pos[1]
+Dir_Min4[0] <= Comparador_Celda:inst296.pos[0]
+Dir_Min4[1] <= Comparador_Celda:inst296.pos[1]
+Dir_Min5[0] <= Comparador_Celda:inst312.pos[0]
+Dir_Min5[1] <= Comparador_Celda:inst312.pos[1]
+Dir_Min6[0] <= Comparador_Celda:inst328.pos[0]
+Dir_Min6[1] <= Comparador_Celda:inst328.pos[1]
+Dir_Min7[0] <= Comparador_Celda:inst344.pos[0]
+Dir_Min7[1] <= Comparador_Celda:inst344.pos[1]
+Dir_Min8[0] <= Comparador_Celda:inst228.pos[0]
+Dir_Min8[1] <= Comparador_Celda:inst228.pos[1]
+Dir_Min9[0] <= Comparador_Celda:inst243.pos[0]
+Dir_Min9[1] <= Comparador_Celda:inst243.pos[1]
+Dir_Min_10_[0] <= Comparador_Celda:inst264.pos[0]
+Dir_Min_10_[1] <= Comparador_Celda:inst264.pos[1]
+Dir_Min_11_[0] <= Comparador_Celda:inst280.pos[0]
+Dir_Min_11_[1] <= Comparador_Celda:inst280.pos[1]
+Dir_Min_1_[0] <= Comparador_Celda:inst376.pos[0]
+Dir_Min_1_[1] <= Comparador_Celda:inst376.pos[1]
+Mi_Peso115[0] <= cte_cero:inst6.CONST_OUT[0]
+Mi_Peso115[1] <= cte_cero:inst6.CONST_OUT[1]
+Mi_Peso115[2] <= cte_cero:inst6.CONST_OUT[2]
+Mi_Peso115[3] <= cte_cero:inst6.CONST_OUT[3]
+Mi_Peso12[0] <= FFD_4bits:inst256.Q[0]
+Mi_Peso12[1] <= FFD_4bits:inst256.Q[1]
+Mi_Peso12[2] <= FFD_4bits:inst256.Q[2]
+Mi_Peso12[3] <= FFD_4bits:inst256.Q[3]
+Mi_Peso13[0] <= FFD_4bits:inst257.Q[0]
+Mi_Peso13[1] <= FFD_4bits:inst257.Q[1]
+Mi_Peso13[2] <= FFD_4bits:inst257.Q[2]
+Mi_Peso13[3] <= FFD_4bits:inst257.Q[3]
+Mi_Peso14[0] <= FFD_4bits:inst258.Q[0]
+Mi_Peso14[1] <= FFD_4bits:inst258.Q[1]
+Mi_Peso14[2] <= FFD_4bits:inst258.Q[2]
+Mi_Peso14[3] <= FFD_4bits:inst258.Q[3]
+Mi_Peso15[0] <= FFD_4bits:inst259.Q[0]
+Mi_Peso15[1] <= FFD_4bits:inst259.Q[1]
+Mi_Peso15[2] <= FFD_4bits:inst259.Q[2]
+Mi_Peso15[3] <= FFD_4bits:inst259.Q[3]
+Mi_Peso2[0] <= FFD_4bits:inst393.Q[0]
+Mi_Peso2[1] <= FFD_4bits:inst393.Q[1]
+Mi_Peso2[2] <= FFD_4bits:inst393.Q[2]
+Mi_Peso2[3] <= FFD_4bits:inst393.Q[3]
+Mi_Peso3[0] <= FFD_4bits:inst409.Q[0]
+Mi_Peso3[1] <= FFD_4bits:inst409.Q[1]
+Mi_Peso3[2] <= FFD_4bits:inst409.Q[2]
+Mi_Peso3[3] <= FFD_4bits:inst409.Q[3]
+Mi_Peso4[0] <= FFD_4bits:inst297.Q[0]
+Mi_Peso4[1] <= FFD_4bits:inst297.Q[1]
+Mi_Peso4[2] <= FFD_4bits:inst297.Q[2]
+Mi_Peso4[3] <= FFD_4bits:inst297.Q[3]
+Mi_Peso5[0] <= FFD_4bits:inst313.Q[0]
+Mi_Peso5[1] <= FFD_4bits:inst313.Q[1]
+Mi_Peso5[2] <= FFD_4bits:inst313.Q[2]
+Mi_Peso5[3] <= FFD_4bits:inst313.Q[3]
+Mi_Peso6[0] <= FFD_4bits:inst329.Q[0]
+Mi_Peso6[1] <= FFD_4bits:inst329.Q[1]
+Mi_Peso6[2] <= FFD_4bits:inst329.Q[2]
+Mi_Peso6[3] <= FFD_4bits:inst329.Q[3]
+Mi_Peso7[0] <= FFD_4bits:inst345.Q[0]
+Mi_Peso7[1] <= FFD_4bits:inst345.Q[1]
+Mi_Peso7[2] <= FFD_4bits:inst345.Q[2]
+Mi_Peso7[3] <= FFD_4bits:inst345.Q[3]
+Mi_Peso8[0] <= FFD_4bits:inst260.Q[0]
+Mi_Peso8[1] <= FFD_4bits:inst260.Q[1]
+Mi_Peso8[2] <= FFD_4bits:inst260.Q[2]
+Mi_Peso8[3] <= FFD_4bits:inst260.Q[3]
+Mi_Peso9[0] <= FFD_4bits:inst261.Q[0]
+Mi_Peso9[1] <= FFD_4bits:inst261.Q[1]
+Mi_Peso9[2] <= FFD_4bits:inst261.Q[2]
+Mi_Peso9[3] <= FFD_4bits:inst261.Q[3]
+Mi_Peso_10_[0] <= FFD_4bits:inst265.Q[0]
+Mi_Peso_10_[1] <= FFD_4bits:inst265.Q[1]
+Mi_Peso_10_[2] <= FFD_4bits:inst265.Q[2]
+Mi_Peso_10_[3] <= FFD_4bits:inst265.Q[3]
+Mi_Peso_11_[0] <= FFD_4bits:inst281.Q[0]
+Mi_Peso_11_[1] <= FFD_4bits:inst281.Q[1]
+Mi_Peso_11_[2] <= FFD_4bits:inst281.Q[2]
+Mi_Peso_11_[3] <= FFD_4bits:inst281.Q[3]
+Mi_Peso_1_[0] <= FFD_4bits:inst377.Q[0]
+Mi_Peso_1_[1] <= FFD_4bits:inst377.Q[1]
+Mi_Peso_1_[2] <= FFD_4bits:inst377.Q[2]
+Mi_Peso_1_[3] <= FFD_4bits:inst377.Q[3]
 
 
-|floodfill_para_simular|sumador_4bits:inst19
-A[0] => S.IN0
-A[0] => C.IN0
-A[0] => C.IN0
-A[1] => S.IN0
-A[1] => C.IN0
-A[1] => C.IN1
-A[2] => S.IN0
-A[2] => C.IN0
-A[2] => C.IN1
-A[3] => S.IN0
-A[3] => C.IN0
-A[3] => C.IN1
-B[0] => S.IN1
-B[0] => C.IN1
-B[0] => C.IN0
-B[1] => S.IN1
-B[1] => C.IN1
-B[1] => C.IN1
-B[2] => S.IN1
-B[2] => C.IN1
-B[2] => C.IN1
-B[3] => S.IN1
-B[3] => C.IN1
-B[3] => C.IN1
-Cin => S.IN1
-Cin => C.IN1
-Cin => C.IN1
-S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
-S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
-S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
-S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
-Cout <= C.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|floodfill_para_simular|Comparador_Celda:inst7
+|floodfill_para_simular|Comparador_Celda:inst168
 arriba[0] => LessThan0.IN4
 arriba[0] => min_value.DATAA
 arriba[1] => LessThan0.IN3
@@ -104,7 +166,7 @@ pos[0] <= min_pos.DB_MAX_OUTPUT_PORT_TYPE
 pos[1] <= min_pos.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|floodfill_para_simular|mux_2x1_4bit:inst10
+|floodfill_para_simular|mux_2x1_4bit:inst158
 sel => y.OUTPUTSELECT
 sel => y.OUTPUTSELECT
 sel => y.OUTPUTSELECT
@@ -123,7 +185,14 @@ y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|floodfill_para_simular|mux_2x1_4bit:inst
+|floodfill_para_simular|generate_constant:inst3
+CONST_OUT[0] <= <VCC>
+CONST_OUT[1] <= <VCC>
+CONST_OUT[2] <= <VCC>
+CONST_OUT[3] <= <VCC>
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst154
 sel => y.OUTPUTSELECT
 sel => y.OUTPUTSELECT
 sel => y.OUTPUTSELECT
@@ -142,7 +211,102 @@ y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|floodfill_para_simular|mux_2x1_4bit:inst9
+|floodfill_para_simular|FFD_4bits:inst260
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+reset => Q[0]~reg0.ACLR
+reset => Q[1]~reg0.ACLR
+reset => Q[2]~reg0.ACLR
+reset => Q[3]~reg0.ACLR
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|sumador_4bits:inst226
+A[0] => S.IN0
+A[0] => C.IN0
+A[0] => C.IN0
+A[1] => S.IN0
+A[1] => C.IN0
+A[1] => C.IN1
+A[2] => S.IN0
+A[2] => C.IN0
+A[2] => C.IN1
+A[3] => S.IN0
+A[3] => C.IN0
+A[3] => C.IN1
+B[0] => S.IN1
+B[0] => C.IN1
+B[0] => C.IN0
+B[1] => S.IN1
+B[1] => C.IN1
+B[1] => C.IN1
+B[2] => S.IN1
+B[2] => C.IN1
+B[2] => C.IN1
+B[3] => S.IN1
+B[3] => C.IN1
+B[3] => C.IN1
+Cin => S.IN1
+Cin => C.IN1
+Cin => C.IN1
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|Comparador_Celda:inst228
+arriba[0] => LessThan0.IN4
+arriba[0] => min_value.DATAA
+arriba[1] => LessThan0.IN3
+arriba[1] => min_value.DATAA
+arriba[2] => LessThan0.IN2
+arriba[2] => min_value.DATAA
+arriba[3] => LessThan0.IN1
+arriba[3] => min_value.DATAA
+der[0] => LessThan2.IN8
+der[0] => min_value.DATAB
+der[1] => LessThan2.IN7
+der[1] => min_value.DATAB
+der[2] => LessThan2.IN6
+der[2] => min_value.DATAB
+der[3] => LessThan2.IN5
+der[3] => min_value.DATAB
+abajo[0] => LessThan0.IN8
+abajo[0] => min_value.DATAB
+abajo[1] => LessThan0.IN7
+abajo[1] => min_value.DATAB
+abajo[2] => LessThan0.IN6
+abajo[2] => min_value.DATAB
+abajo[3] => LessThan0.IN5
+abajo[3] => min_value.DATAB
+izq[0] => LessThan1.IN8
+izq[0] => min_value.DATAB
+izq[1] => LessThan1.IN7
+izq[1] => min_value.DATAB
+izq[2] => LessThan1.IN6
+izq[2] => min_value.DATAB
+izq[3] => LessThan1.IN5
+izq[3] => min_value.DATAB
+menor[0] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[1] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[2] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[3] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+pos[0] <= min_pos.DB_MAX_OUTPUT_PORT_TYPE
+pos[1] <= min_pos.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst218
 sel => y.OUTPUTSELECT
 sel => y.OUTPUTSELECT
 sel => y.OUTPUTSELECT
@@ -161,7 +325,2374 @@ y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|floodfill_para_simular|mux_2x1_4bit:inst12
+|floodfill_para_simular|FFD_4bits:inst256
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+reset => Q[0]~reg0.ACLR
+reset => Q[1]~reg0.ACLR
+reset => Q[2]~reg0.ACLR
+reset => Q[3]~reg0.ACLR
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|sumador_4bits:inst166
+A[0] => S.IN0
+A[0] => C.IN0
+A[0] => C.IN0
+A[1] => S.IN0
+A[1] => C.IN0
+A[1] => C.IN1
+A[2] => S.IN0
+A[2] => C.IN0
+A[2] => C.IN1
+A[3] => S.IN0
+A[3] => C.IN0
+A[3] => C.IN1
+B[0] => S.IN1
+B[0] => C.IN1
+B[0] => C.IN0
+B[1] => S.IN1
+B[1] => C.IN1
+B[1] => C.IN1
+B[2] => S.IN1
+B[2] => C.IN1
+B[2] => C.IN1
+B[3] => S.IN1
+B[3] => C.IN1
+B[3] => C.IN1
+Cin => S.IN1
+Cin => C.IN1
+Cin => C.IN1
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|cte1:inst
+CONST_OUT[0] <= <VCC>
+CONST_OUT[1] <= <GND>
+CONST_OUT[2] <= <GND>
+CONST_OUT[3] <= <GND>
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst214
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|FFD_4bits:inst297
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+reset => Q[0]~reg0.ACLR
+reset => Q[1]~reg0.ACLR
+reset => Q[2]~reg0.ACLR
+reset => Q[3]~reg0.ACLR
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|sumador_4bits:inst294
+A[0] => S.IN0
+A[0] => C.IN0
+A[0] => C.IN0
+A[1] => S.IN0
+A[1] => C.IN0
+A[1] => C.IN1
+A[2] => S.IN0
+A[2] => C.IN0
+A[2] => C.IN1
+A[3] => S.IN0
+A[3] => C.IN0
+A[3] => C.IN1
+B[0] => S.IN1
+B[0] => C.IN1
+B[0] => C.IN0
+B[1] => S.IN1
+B[1] => C.IN1
+B[1] => C.IN1
+B[2] => S.IN1
+B[2] => C.IN1
+B[2] => C.IN1
+B[3] => S.IN1
+B[3] => C.IN1
+B[3] => C.IN1
+Cin => S.IN1
+Cin => C.IN1
+Cin => C.IN1
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|Comparador_Celda:inst296
+arriba[0] => LessThan0.IN4
+arriba[0] => min_value.DATAA
+arriba[1] => LessThan0.IN3
+arriba[1] => min_value.DATAA
+arriba[2] => LessThan0.IN2
+arriba[2] => min_value.DATAA
+arriba[3] => LessThan0.IN1
+arriba[3] => min_value.DATAA
+der[0] => LessThan2.IN8
+der[0] => min_value.DATAB
+der[1] => LessThan2.IN7
+der[1] => min_value.DATAB
+der[2] => LessThan2.IN6
+der[2] => min_value.DATAB
+der[3] => LessThan2.IN5
+der[3] => min_value.DATAB
+abajo[0] => LessThan0.IN8
+abajo[0] => min_value.DATAB
+abajo[1] => LessThan0.IN7
+abajo[1] => min_value.DATAB
+abajo[2] => LessThan0.IN6
+abajo[2] => min_value.DATAB
+abajo[3] => LessThan0.IN5
+abajo[3] => min_value.DATAB
+izq[0] => LessThan1.IN8
+izq[0] => min_value.DATAB
+izq[1] => LessThan1.IN7
+izq[1] => min_value.DATAB
+izq[2] => LessThan1.IN6
+izq[2] => min_value.DATAB
+izq[3] => LessThan1.IN5
+izq[3] => min_value.DATAB
+menor[0] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[1] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[2] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[3] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+pos[0] <= min_pos.DB_MAX_OUTPUT_PORT_TYPE
+pos[1] <= min_pos.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst286
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst282
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|cte_cero:inst6
+CONST_OUT[0] <= <GND>
+CONST_OUT[1] <= <GND>
+CONST_OUT[2] <= <GND>
+CONST_OUT[3] <= <GND>
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst284
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|FFD_4bits:inst313
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+reset => Q[0]~reg0.ACLR
+reset => Q[1]~reg0.ACLR
+reset => Q[2]~reg0.ACLR
+reset => Q[3]~reg0.ACLR
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|sumador_4bits:inst310
+A[0] => S.IN0
+A[0] => C.IN0
+A[0] => C.IN0
+A[1] => S.IN0
+A[1] => C.IN0
+A[1] => C.IN1
+A[2] => S.IN0
+A[2] => C.IN0
+A[2] => C.IN1
+A[3] => S.IN0
+A[3] => C.IN0
+A[3] => C.IN1
+B[0] => S.IN1
+B[0] => C.IN1
+B[0] => C.IN0
+B[1] => S.IN1
+B[1] => C.IN1
+B[1] => C.IN1
+B[2] => S.IN1
+B[2] => C.IN1
+B[2] => C.IN1
+B[3] => S.IN1
+B[3] => C.IN1
+B[3] => C.IN1
+Cin => S.IN1
+Cin => C.IN1
+Cin => C.IN1
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|Comparador_Celda:inst312
+arriba[0] => LessThan0.IN4
+arriba[0] => min_value.DATAA
+arriba[1] => LessThan0.IN3
+arriba[1] => min_value.DATAA
+arriba[2] => LessThan0.IN2
+arriba[2] => min_value.DATAA
+arriba[3] => LessThan0.IN1
+arriba[3] => min_value.DATAA
+der[0] => LessThan2.IN8
+der[0] => min_value.DATAB
+der[1] => LessThan2.IN7
+der[1] => min_value.DATAB
+der[2] => LessThan2.IN6
+der[2] => min_value.DATAB
+der[3] => LessThan2.IN5
+der[3] => min_value.DATAB
+abajo[0] => LessThan0.IN8
+abajo[0] => min_value.DATAB
+abajo[1] => LessThan0.IN7
+abajo[1] => min_value.DATAB
+abajo[2] => LessThan0.IN6
+abajo[2] => min_value.DATAB
+abajo[3] => LessThan0.IN5
+abajo[3] => min_value.DATAB
+izq[0] => LessThan1.IN8
+izq[0] => min_value.DATAB
+izq[1] => LessThan1.IN7
+izq[1] => min_value.DATAB
+izq[2] => LessThan1.IN6
+izq[2] => min_value.DATAB
+izq[3] => LessThan1.IN5
+izq[3] => min_value.DATAB
+menor[0] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[1] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[2] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[3] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+pos[0] <= min_pos.DB_MAX_OUTPUT_PORT_TYPE
+pos[1] <= min_pos.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst302
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|FFD_4bits:inst261
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+reset => Q[0]~reg0.ACLR
+reset => Q[1]~reg0.ACLR
+reset => Q[2]~reg0.ACLR
+reset => Q[3]~reg0.ACLR
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|sumador_4bits:inst241
+A[0] => S.IN0
+A[0] => C.IN0
+A[0] => C.IN0
+A[1] => S.IN0
+A[1] => C.IN0
+A[1] => C.IN1
+A[2] => S.IN0
+A[2] => C.IN0
+A[2] => C.IN1
+A[3] => S.IN0
+A[3] => C.IN0
+A[3] => C.IN1
+B[0] => S.IN1
+B[0] => C.IN1
+B[0] => C.IN0
+B[1] => S.IN1
+B[1] => C.IN1
+B[1] => C.IN1
+B[2] => S.IN1
+B[2] => C.IN1
+B[2] => C.IN1
+B[3] => S.IN1
+B[3] => C.IN1
+B[3] => C.IN1
+Cin => S.IN1
+Cin => C.IN1
+Cin => C.IN1
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|Comparador_Celda:inst243
+arriba[0] => LessThan0.IN4
+arriba[0] => min_value.DATAA
+arriba[1] => LessThan0.IN3
+arriba[1] => min_value.DATAA
+arriba[2] => LessThan0.IN2
+arriba[2] => min_value.DATAA
+arriba[3] => LessThan0.IN1
+arriba[3] => min_value.DATAA
+der[0] => LessThan2.IN8
+der[0] => min_value.DATAB
+der[1] => LessThan2.IN7
+der[1] => min_value.DATAB
+der[2] => LessThan2.IN6
+der[2] => min_value.DATAB
+der[3] => LessThan2.IN5
+der[3] => min_value.DATAB
+abajo[0] => LessThan0.IN8
+abajo[0] => min_value.DATAB
+abajo[1] => LessThan0.IN7
+abajo[1] => min_value.DATAB
+abajo[2] => LessThan0.IN6
+abajo[2] => min_value.DATAB
+abajo[3] => LessThan0.IN5
+abajo[3] => min_value.DATAB
+izq[0] => LessThan1.IN8
+izq[0] => min_value.DATAB
+izq[1] => LessThan1.IN7
+izq[1] => min_value.DATAB
+izq[2] => LessThan1.IN6
+izq[2] => min_value.DATAB
+izq[3] => LessThan1.IN5
+izq[3] => min_value.DATAB
+menor[0] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[1] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[2] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[3] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+pos[0] <= min_pos.DB_MAX_OUTPUT_PORT_TYPE
+pos[1] <= min_pos.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst233
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|FFD_4bits:inst257
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+reset => Q[0]~reg0.ACLR
+reset => Q[1]~reg0.ACLR
+reset => Q[2]~reg0.ACLR
+reset => Q[3]~reg0.ACLR
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|sumador_4bits:inst181
+A[0] => S.IN0
+A[0] => C.IN0
+A[0] => C.IN0
+A[1] => S.IN0
+A[1] => C.IN0
+A[1] => C.IN1
+A[2] => S.IN0
+A[2] => C.IN0
+A[2] => C.IN1
+A[3] => S.IN0
+A[3] => C.IN0
+A[3] => C.IN1
+B[0] => S.IN1
+B[0] => C.IN1
+B[0] => C.IN0
+B[1] => S.IN1
+B[1] => C.IN1
+B[1] => C.IN1
+B[2] => S.IN1
+B[2] => C.IN1
+B[2] => C.IN1
+B[3] => S.IN1
+B[3] => C.IN1
+B[3] => C.IN1
+Cin => S.IN1
+Cin => C.IN1
+Cin => C.IN1
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|Comparador_Celda:inst183
+arriba[0] => LessThan0.IN4
+arriba[0] => min_value.DATAA
+arriba[1] => LessThan0.IN3
+arriba[1] => min_value.DATAA
+arriba[2] => LessThan0.IN2
+arriba[2] => min_value.DATAA
+arriba[3] => LessThan0.IN1
+arriba[3] => min_value.DATAA
+der[0] => LessThan2.IN8
+der[0] => min_value.DATAB
+der[1] => LessThan2.IN7
+der[1] => min_value.DATAB
+der[2] => LessThan2.IN6
+der[2] => min_value.DATAB
+der[3] => LessThan2.IN5
+der[3] => min_value.DATAB
+abajo[0] => LessThan0.IN8
+abajo[0] => min_value.DATAB
+abajo[1] => LessThan0.IN7
+abajo[1] => min_value.DATAB
+abajo[2] => LessThan0.IN6
+abajo[2] => min_value.DATAB
+abajo[3] => LessThan0.IN5
+abajo[3] => min_value.DATAB
+izq[0] => LessThan1.IN8
+izq[0] => min_value.DATAB
+izq[1] => LessThan1.IN7
+izq[1] => min_value.DATAB
+izq[2] => LessThan1.IN6
+izq[2] => min_value.DATAB
+izq[3] => LessThan1.IN5
+izq[3] => min_value.DATAB
+menor[0] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[1] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[2] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[3] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+pos[0] <= min_pos.DB_MAX_OUTPUT_PORT_TYPE
+pos[1] <= min_pos.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst173
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst169
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst171
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|FFD_4bits:inst258
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+reset => Q[0]~reg0.ACLR
+reset => Q[1]~reg0.ACLR
+reset => Q[2]~reg0.ACLR
+reset => Q[3]~reg0.ACLR
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|sumador_4bits:inst196
+A[0] => S.IN0
+A[0] => C.IN0
+A[0] => C.IN0
+A[1] => S.IN0
+A[1] => C.IN0
+A[1] => C.IN1
+A[2] => S.IN0
+A[2] => C.IN0
+A[2] => C.IN1
+A[3] => S.IN0
+A[3] => C.IN0
+A[3] => C.IN1
+B[0] => S.IN1
+B[0] => C.IN1
+B[0] => C.IN0
+B[1] => S.IN1
+B[1] => C.IN1
+B[1] => C.IN1
+B[2] => S.IN1
+B[2] => C.IN1
+B[2] => C.IN1
+B[3] => S.IN1
+B[3] => C.IN1
+B[3] => C.IN1
+Cin => S.IN1
+Cin => C.IN1
+Cin => C.IN1
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|Comparador_Celda:inst198
+arriba[0] => LessThan0.IN4
+arriba[0] => min_value.DATAA
+arriba[1] => LessThan0.IN3
+arriba[1] => min_value.DATAA
+arriba[2] => LessThan0.IN2
+arriba[2] => min_value.DATAA
+arriba[3] => LessThan0.IN1
+arriba[3] => min_value.DATAA
+der[0] => LessThan2.IN8
+der[0] => min_value.DATAB
+der[1] => LessThan2.IN7
+der[1] => min_value.DATAB
+der[2] => LessThan2.IN6
+der[2] => min_value.DATAB
+der[3] => LessThan2.IN5
+der[3] => min_value.DATAB
+abajo[0] => LessThan0.IN8
+abajo[0] => min_value.DATAB
+abajo[1] => LessThan0.IN7
+abajo[1] => min_value.DATAB
+abajo[2] => LessThan0.IN6
+abajo[2] => min_value.DATAB
+abajo[3] => LessThan0.IN5
+abajo[3] => min_value.DATAB
+izq[0] => LessThan1.IN8
+izq[0] => min_value.DATAB
+izq[1] => LessThan1.IN7
+izq[1] => min_value.DATAB
+izq[2] => LessThan1.IN6
+izq[2] => min_value.DATAB
+izq[3] => LessThan1.IN5
+izq[3] => min_value.DATAB
+menor[0] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[1] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[2] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[3] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+pos[0] <= min_pos.DB_MAX_OUTPUT_PORT_TYPE
+pos[1] <= min_pos.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst188
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst184
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|FFD_4bits:inst265
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+reset => Q[0]~reg0.ACLR
+reset => Q[1]~reg0.ACLR
+reset => Q[2]~reg0.ACLR
+reset => Q[3]~reg0.ACLR
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|sumador_4bits:inst262
+A[0] => S.IN0
+A[0] => C.IN0
+A[0] => C.IN0
+A[1] => S.IN0
+A[1] => C.IN0
+A[1] => C.IN1
+A[2] => S.IN0
+A[2] => C.IN0
+A[2] => C.IN1
+A[3] => S.IN0
+A[3] => C.IN0
+A[3] => C.IN1
+B[0] => S.IN1
+B[0] => C.IN1
+B[0] => C.IN0
+B[1] => S.IN1
+B[1] => C.IN1
+B[1] => C.IN1
+B[2] => S.IN1
+B[2] => C.IN1
+B[2] => C.IN1
+B[3] => S.IN1
+B[3] => C.IN1
+B[3] => C.IN1
+Cin => S.IN1
+Cin => C.IN1
+Cin => C.IN1
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|Comparador_Celda:inst264
+arriba[0] => LessThan0.IN4
+arriba[0] => min_value.DATAA
+arriba[1] => LessThan0.IN3
+arriba[1] => min_value.DATAA
+arriba[2] => LessThan0.IN2
+arriba[2] => min_value.DATAA
+arriba[3] => LessThan0.IN1
+arriba[3] => min_value.DATAA
+der[0] => LessThan2.IN8
+der[0] => min_value.DATAB
+der[1] => LessThan2.IN7
+der[1] => min_value.DATAB
+der[2] => LessThan2.IN6
+der[2] => min_value.DATAB
+der[3] => LessThan2.IN5
+der[3] => min_value.DATAB
+abajo[0] => LessThan0.IN8
+abajo[0] => min_value.DATAB
+abajo[1] => LessThan0.IN7
+abajo[1] => min_value.DATAB
+abajo[2] => LessThan0.IN6
+abajo[2] => min_value.DATAB
+abajo[3] => LessThan0.IN5
+abajo[3] => min_value.DATAB
+izq[0] => LessThan1.IN8
+izq[0] => min_value.DATAB
+izq[1] => LessThan1.IN7
+izq[1] => min_value.DATAB
+izq[2] => LessThan1.IN6
+izq[2] => min_value.DATAB
+izq[3] => LessThan1.IN5
+izq[3] => min_value.DATAB
+menor[0] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[1] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[2] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[3] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+pos[0] <= min_pos.DB_MAX_OUTPUT_PORT_TYPE
+pos[1] <= min_pos.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst248
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst244
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|FFD_4bits:inst329
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+reset => Q[0]~reg0.ACLR
+reset => Q[1]~reg0.ACLR
+reset => Q[2]~reg0.ACLR
+reset => Q[3]~reg0.ACLR
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|sumador_4bits:inst326
+A[0] => S.IN0
+A[0] => C.IN0
+A[0] => C.IN0
+A[1] => S.IN0
+A[1] => C.IN0
+A[1] => C.IN1
+A[2] => S.IN0
+A[2] => C.IN0
+A[2] => C.IN1
+A[3] => S.IN0
+A[3] => C.IN0
+A[3] => C.IN1
+B[0] => S.IN1
+B[0] => C.IN1
+B[0] => C.IN0
+B[1] => S.IN1
+B[1] => C.IN1
+B[1] => C.IN1
+B[2] => S.IN1
+B[2] => C.IN1
+B[2] => C.IN1
+B[3] => S.IN1
+B[3] => C.IN1
+B[3] => C.IN1
+Cin => S.IN1
+Cin => C.IN1
+Cin => C.IN1
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|Comparador_Celda:inst328
+arriba[0] => LessThan0.IN4
+arriba[0] => min_value.DATAA
+arriba[1] => LessThan0.IN3
+arriba[1] => min_value.DATAA
+arriba[2] => LessThan0.IN2
+arriba[2] => min_value.DATAA
+arriba[3] => LessThan0.IN1
+arriba[3] => min_value.DATAA
+der[0] => LessThan2.IN8
+der[0] => min_value.DATAB
+der[1] => LessThan2.IN7
+der[1] => min_value.DATAB
+der[2] => LessThan2.IN6
+der[2] => min_value.DATAB
+der[3] => LessThan2.IN5
+der[3] => min_value.DATAB
+abajo[0] => LessThan0.IN8
+abajo[0] => min_value.DATAB
+abajo[1] => LessThan0.IN7
+abajo[1] => min_value.DATAB
+abajo[2] => LessThan0.IN6
+abajo[2] => min_value.DATAB
+abajo[3] => LessThan0.IN5
+abajo[3] => min_value.DATAB
+izq[0] => LessThan1.IN8
+izq[0] => min_value.DATAB
+izq[1] => LessThan1.IN7
+izq[1] => min_value.DATAB
+izq[2] => LessThan1.IN6
+izq[2] => min_value.DATAB
+izq[3] => LessThan1.IN5
+izq[3] => min_value.DATAB
+menor[0] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[1] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[2] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[3] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+pos[0] <= min_pos.DB_MAX_OUTPUT_PORT_TYPE
+pos[1] <= min_pos.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst318
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst314
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|FFD_4bits:inst393
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+reset => Q[0]~reg0.ACLR
+reset => Q[1]~reg0.ACLR
+reset => Q[2]~reg0.ACLR
+reset => Q[3]~reg0.ACLR
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|sumador_4bits:inst390
+A[0] => S.IN0
+A[0] => C.IN0
+A[0] => C.IN0
+A[1] => S.IN0
+A[1] => C.IN0
+A[1] => C.IN1
+A[2] => S.IN0
+A[2] => C.IN0
+A[2] => C.IN1
+A[3] => S.IN0
+A[3] => C.IN0
+A[3] => C.IN1
+B[0] => S.IN1
+B[0] => C.IN1
+B[0] => C.IN0
+B[1] => S.IN1
+B[1] => C.IN1
+B[1] => C.IN1
+B[2] => S.IN1
+B[2] => C.IN1
+B[2] => C.IN1
+B[3] => S.IN1
+B[3] => C.IN1
+B[3] => C.IN1
+Cin => S.IN1
+Cin => C.IN1
+Cin => C.IN1
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|Comparador_Celda:inst392
+arriba[0] => LessThan0.IN4
+arriba[0] => min_value.DATAA
+arriba[1] => LessThan0.IN3
+arriba[1] => min_value.DATAA
+arriba[2] => LessThan0.IN2
+arriba[2] => min_value.DATAA
+arriba[3] => LessThan0.IN1
+arriba[3] => min_value.DATAA
+der[0] => LessThan2.IN8
+der[0] => min_value.DATAB
+der[1] => LessThan2.IN7
+der[1] => min_value.DATAB
+der[2] => LessThan2.IN6
+der[2] => min_value.DATAB
+der[3] => LessThan2.IN5
+der[3] => min_value.DATAB
+abajo[0] => LessThan0.IN8
+abajo[0] => min_value.DATAB
+abajo[1] => LessThan0.IN7
+abajo[1] => min_value.DATAB
+abajo[2] => LessThan0.IN6
+abajo[2] => min_value.DATAB
+abajo[3] => LessThan0.IN5
+abajo[3] => min_value.DATAB
+izq[0] => LessThan1.IN8
+izq[0] => min_value.DATAB
+izq[1] => LessThan1.IN7
+izq[1] => min_value.DATAB
+izq[2] => LessThan1.IN6
+izq[2] => min_value.DATAB
+izq[3] => LessThan1.IN5
+izq[3] => min_value.DATAB
+menor[0] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[1] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[2] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[3] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+pos[0] <= min_pos.DB_MAX_OUTPUT_PORT_TYPE
+pos[1] <= min_pos.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst382
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst378
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst380
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|FFD_4bits:inst409
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+reset => Q[0]~reg0.ACLR
+reset => Q[1]~reg0.ACLR
+reset => Q[2]~reg0.ACLR
+reset => Q[3]~reg0.ACLR
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|sumador_4bits:inst406
+A[0] => S.IN0
+A[0] => C.IN0
+A[0] => C.IN0
+A[1] => S.IN0
+A[1] => C.IN0
+A[1] => C.IN1
+A[2] => S.IN0
+A[2] => C.IN0
+A[2] => C.IN1
+A[3] => S.IN0
+A[3] => C.IN0
+A[3] => C.IN1
+B[0] => S.IN1
+B[0] => C.IN1
+B[0] => C.IN0
+B[1] => S.IN1
+B[1] => C.IN1
+B[1] => C.IN1
+B[2] => S.IN1
+B[2] => C.IN1
+B[2] => C.IN1
+B[3] => S.IN1
+B[3] => C.IN1
+B[3] => C.IN1
+Cin => S.IN1
+Cin => C.IN1
+Cin => C.IN1
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|Comparador_Celda:inst408
+arriba[0] => LessThan0.IN4
+arriba[0] => min_value.DATAA
+arriba[1] => LessThan0.IN3
+arriba[1] => min_value.DATAA
+arriba[2] => LessThan0.IN2
+arriba[2] => min_value.DATAA
+arriba[3] => LessThan0.IN1
+arriba[3] => min_value.DATAA
+der[0] => LessThan2.IN8
+der[0] => min_value.DATAB
+der[1] => LessThan2.IN7
+der[1] => min_value.DATAB
+der[2] => LessThan2.IN6
+der[2] => min_value.DATAB
+der[3] => LessThan2.IN5
+der[3] => min_value.DATAB
+abajo[0] => LessThan0.IN8
+abajo[0] => min_value.DATAB
+abajo[1] => LessThan0.IN7
+abajo[1] => min_value.DATAB
+abajo[2] => LessThan0.IN6
+abajo[2] => min_value.DATAB
+abajo[3] => LessThan0.IN5
+abajo[3] => min_value.DATAB
+izq[0] => LessThan1.IN8
+izq[0] => min_value.DATAB
+izq[1] => LessThan1.IN7
+izq[1] => min_value.DATAB
+izq[2] => LessThan1.IN6
+izq[2] => min_value.DATAB
+izq[3] => LessThan1.IN5
+izq[3] => min_value.DATAB
+menor[0] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[1] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[2] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[3] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+pos[0] <= min_pos.DB_MAX_OUTPUT_PORT_TYPE
+pos[1] <= min_pos.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst398
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|FFD_4bits:inst345
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+reset => Q[0]~reg0.ACLR
+reset => Q[1]~reg0.ACLR
+reset => Q[2]~reg0.ACLR
+reset => Q[3]~reg0.ACLR
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|sumador_4bits:inst342
+A[0] => S.IN0
+A[0] => C.IN0
+A[0] => C.IN0
+A[1] => S.IN0
+A[1] => C.IN0
+A[1] => C.IN1
+A[2] => S.IN0
+A[2] => C.IN0
+A[2] => C.IN1
+A[3] => S.IN0
+A[3] => C.IN0
+A[3] => C.IN1
+B[0] => S.IN1
+B[0] => C.IN1
+B[0] => C.IN0
+B[1] => S.IN1
+B[1] => C.IN1
+B[1] => C.IN1
+B[2] => S.IN1
+B[2] => C.IN1
+B[2] => C.IN1
+B[3] => S.IN1
+B[3] => C.IN1
+B[3] => C.IN1
+Cin => S.IN1
+Cin => C.IN1
+Cin => C.IN1
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|Comparador_Celda:inst344
+arriba[0] => LessThan0.IN4
+arriba[0] => min_value.DATAA
+arriba[1] => LessThan0.IN3
+arriba[1] => min_value.DATAA
+arriba[2] => LessThan0.IN2
+arriba[2] => min_value.DATAA
+arriba[3] => LessThan0.IN1
+arriba[3] => min_value.DATAA
+der[0] => LessThan2.IN8
+der[0] => min_value.DATAB
+der[1] => LessThan2.IN7
+der[1] => min_value.DATAB
+der[2] => LessThan2.IN6
+der[2] => min_value.DATAB
+der[3] => LessThan2.IN5
+der[3] => min_value.DATAB
+abajo[0] => LessThan0.IN8
+abajo[0] => min_value.DATAB
+abajo[1] => LessThan0.IN7
+abajo[1] => min_value.DATAB
+abajo[2] => LessThan0.IN6
+abajo[2] => min_value.DATAB
+abajo[3] => LessThan0.IN5
+abajo[3] => min_value.DATAB
+izq[0] => LessThan1.IN8
+izq[0] => min_value.DATAB
+izq[1] => LessThan1.IN7
+izq[1] => min_value.DATAB
+izq[2] => LessThan1.IN6
+izq[2] => min_value.DATAB
+izq[3] => LessThan1.IN5
+izq[3] => min_value.DATAB
+menor[0] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[1] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[2] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[3] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+pos[0] <= min_pos.DB_MAX_OUTPUT_PORT_TYPE
+pos[1] <= min_pos.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst334
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|FFD_4bits:inst281
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+reset => Q[0]~reg0.ACLR
+reset => Q[1]~reg0.ACLR
+reset => Q[2]~reg0.ACLR
+reset => Q[3]~reg0.ACLR
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|sumador_4bits:inst278
+A[0] => S.IN0
+A[0] => C.IN0
+A[0] => C.IN0
+A[1] => S.IN0
+A[1] => C.IN0
+A[1] => C.IN1
+A[2] => S.IN0
+A[2] => C.IN0
+A[2] => C.IN1
+A[3] => S.IN0
+A[3] => C.IN0
+A[3] => C.IN1
+B[0] => S.IN1
+B[0] => C.IN1
+B[0] => C.IN0
+B[1] => S.IN1
+B[1] => C.IN1
+B[1] => C.IN1
+B[2] => S.IN1
+B[2] => C.IN1
+B[2] => C.IN1
+B[3] => S.IN1
+B[3] => C.IN1
+B[3] => C.IN1
+Cin => S.IN1
+Cin => C.IN1
+Cin => C.IN1
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|Comparador_Celda:inst280
+arriba[0] => LessThan0.IN4
+arriba[0] => min_value.DATAA
+arriba[1] => LessThan0.IN3
+arriba[1] => min_value.DATAA
+arriba[2] => LessThan0.IN2
+arriba[2] => min_value.DATAA
+arriba[3] => LessThan0.IN1
+arriba[3] => min_value.DATAA
+der[0] => LessThan2.IN8
+der[0] => min_value.DATAB
+der[1] => LessThan2.IN7
+der[1] => min_value.DATAB
+der[2] => LessThan2.IN6
+der[2] => min_value.DATAB
+der[3] => LessThan2.IN5
+der[3] => min_value.DATAB
+abajo[0] => LessThan0.IN8
+abajo[0] => min_value.DATAB
+abajo[1] => LessThan0.IN7
+abajo[1] => min_value.DATAB
+abajo[2] => LessThan0.IN6
+abajo[2] => min_value.DATAB
+abajo[3] => LessThan0.IN5
+abajo[3] => min_value.DATAB
+izq[0] => LessThan1.IN8
+izq[0] => min_value.DATAB
+izq[1] => LessThan1.IN7
+izq[1] => min_value.DATAB
+izq[2] => LessThan1.IN6
+izq[2] => min_value.DATAB
+izq[3] => LessThan1.IN5
+izq[3] => min_value.DATAB
+menor[0] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[1] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[2] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[3] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+pos[0] <= min_pos.DB_MAX_OUTPUT_PORT_TYPE
+pos[1] <= min_pos.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst270
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|FFD_4bits:inst259
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+reset => Q[0]~reg0.ACLR
+reset => Q[1]~reg0.ACLR
+reset => Q[2]~reg0.ACLR
+reset => Q[3]~reg0.ACLR
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|sumador_4bits:inst211
+A[0] => S.IN0
+A[0] => C.IN0
+A[0] => C.IN0
+A[1] => S.IN0
+A[1] => C.IN0
+A[1] => C.IN1
+A[2] => S.IN0
+A[2] => C.IN0
+A[2] => C.IN1
+A[3] => S.IN0
+A[3] => C.IN0
+A[3] => C.IN1
+B[0] => S.IN1
+B[0] => C.IN1
+B[0] => C.IN0
+B[1] => S.IN1
+B[1] => C.IN1
+B[1] => C.IN1
+B[2] => S.IN1
+B[2] => C.IN1
+B[2] => C.IN1
+B[3] => S.IN1
+B[3] => C.IN1
+B[3] => C.IN1
+Cin => S.IN1
+Cin => C.IN1
+Cin => C.IN1
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|Comparador_Celda:inst213
+arriba[0] => LessThan0.IN4
+arriba[0] => min_value.DATAA
+arriba[1] => LessThan0.IN3
+arriba[1] => min_value.DATAA
+arriba[2] => LessThan0.IN2
+arriba[2] => min_value.DATAA
+arriba[3] => LessThan0.IN1
+arriba[3] => min_value.DATAA
+der[0] => LessThan2.IN8
+der[0] => min_value.DATAB
+der[1] => LessThan2.IN7
+der[1] => min_value.DATAB
+der[2] => LessThan2.IN6
+der[2] => min_value.DATAB
+der[3] => LessThan2.IN5
+der[3] => min_value.DATAB
+abajo[0] => LessThan0.IN8
+abajo[0] => min_value.DATAB
+abajo[1] => LessThan0.IN7
+abajo[1] => min_value.DATAB
+abajo[2] => LessThan0.IN6
+abajo[2] => min_value.DATAB
+abajo[3] => LessThan0.IN5
+abajo[3] => min_value.DATAB
+izq[0] => LessThan1.IN8
+izq[0] => min_value.DATAB
+izq[1] => LessThan1.IN7
+izq[1] => min_value.DATAB
+izq[2] => LessThan1.IN6
+izq[2] => min_value.DATAB
+izq[3] => LessThan1.IN5
+izq[3] => min_value.DATAB
+menor[0] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[1] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[2] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[3] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+pos[0] <= min_pos.DB_MAX_OUTPUT_PORT_TYPE
+pos[1] <= min_pos.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst203
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst199
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst201
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst205
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst266
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst268
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst272
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst330
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst332
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst336
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst394
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst396
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst400
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst384
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|FFD_4bits:inst377
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+reset => Q[0]~reg0.ACLR
+reset => Q[1]~reg0.ACLR
+reset => Q[2]~reg0.ACLR
+reset => Q[3]~reg0.ACLR
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|sumador_4bits:inst374
+A[0] => S.IN0
+A[0] => C.IN0
+A[0] => C.IN0
+A[1] => S.IN0
+A[1] => C.IN0
+A[1] => C.IN1
+A[2] => S.IN0
+A[2] => C.IN0
+A[2] => C.IN1
+A[3] => S.IN0
+A[3] => C.IN0
+A[3] => C.IN1
+B[0] => S.IN1
+B[0] => C.IN1
+B[0] => C.IN0
+B[1] => S.IN1
+B[1] => C.IN1
+B[1] => C.IN1
+B[2] => S.IN1
+B[2] => C.IN1
+B[2] => C.IN1
+B[3] => S.IN1
+B[3] => C.IN1
+B[3] => C.IN1
+Cin => S.IN1
+Cin => C.IN1
+Cin => C.IN1
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|Comparador_Celda:inst376
+arriba[0] => LessThan0.IN4
+arriba[0] => min_value.DATAA
+arriba[1] => LessThan0.IN3
+arriba[1] => min_value.DATAA
+arriba[2] => LessThan0.IN2
+arriba[2] => min_value.DATAA
+arriba[3] => LessThan0.IN1
+arriba[3] => min_value.DATAA
+der[0] => LessThan2.IN8
+der[0] => min_value.DATAB
+der[1] => LessThan2.IN7
+der[1] => min_value.DATAB
+der[2] => LessThan2.IN6
+der[2] => min_value.DATAB
+der[3] => LessThan2.IN5
+der[3] => min_value.DATAB
+abajo[0] => LessThan0.IN8
+abajo[0] => min_value.DATAB
+abajo[1] => LessThan0.IN7
+abajo[1] => min_value.DATAB
+abajo[2] => LessThan0.IN6
+abajo[2] => min_value.DATAB
+abajo[3] => LessThan0.IN5
+abajo[3] => min_value.DATAB
+izq[0] => LessThan1.IN8
+izq[0] => min_value.DATAB
+izq[1] => LessThan1.IN7
+izq[1] => min_value.DATAB
+izq[2] => LessThan1.IN6
+izq[2] => min_value.DATAB
+izq[3] => LessThan1.IN5
+izq[3] => min_value.DATAB
+menor[0] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[1] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[2] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+menor[3] <= min_value.DB_MAX_OUTPUT_PORT_TYPE
+pos[0] <= min_pos.DB_MAX_OUTPUT_PORT_TYPE
+pos[1] <= min_pos.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst366
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst362
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst364
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst368
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst316
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst320
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst246
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst250
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst186
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst190
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst175
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst229
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst231
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst235
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst298
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst300
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst304
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst288
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst216
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst220
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst156
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+sel => y.OUTPUTSELECT
+d0[0] => y.DATAB
+d0[1] => y.DATAB
+d0[2] => y.DATAB
+d0[3] => y.DATAB
+d1[0] => y.DATAA
+d1[1] => y.DATAA
+d1[2] => y.DATAA
+d1[3] => y.DATAA
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|floodfill_para_simular|mux_2x1_4bit:inst160
 sel => y.OUTPUTSELECT
 sel => y.OUTPUTSELECT
 sel => y.OUTPUTSELECT
