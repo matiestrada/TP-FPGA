@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ADC_tutorial
-Tue Nov 26 22:48:23 2024
+Wed Nov 27 09:22:44 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -43,7 +43,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Nov 26 22:48:23 2024           ;
+; Analysis & Synthesis Status        ; Successful - Wed Nov 27 09:22:44 2024           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; ADC_tutorial                                    ;
 ; Top-level Entity Name              ; floodfill_para_simular                          ;
@@ -52,7 +52,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 151                                             ;
 ;     Dedicated logic registers      ; 43                                              ;
 ; Total registers                    ; 43                                              ;
-; Total pins                         ; 96                                              ;
+; Total pins                         ; 103                                             ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -169,8 +169,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Comparador_Celda.vhd             ; yes             ; User VHDL File                     ; C:/Users/Sorteito/Documents/GitHub/TP-FPGA/MainV1.2/Comparador_Celda.vhd       ;         ;
 ; floodfill_para_simular.bdf       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Sorteito/Documents/GitHub/TP-FPGA/MainV1.2/floodfill_para_simular.bdf ;         ;
 ; FFD_4bits.vhd                    ; yes             ; User VHDL File                     ; C:/Users/Sorteito/Documents/GitHub/TP-FPGA/MainV1.2/FFD_4bits.vhd              ;         ;
+; pared.vhd                        ; yes             ; User VHDL File                     ; C:/Users/Sorteito/Documents/GitHub/TP-FPGA/MainV1.2/pared.vhd                  ;         ;
 ; generate_constant.vhd            ; yes             ; User VHDL File                     ; C:/Users/Sorteito/Documents/GitHub/TP-FPGA/MainV1.2/generate_constant.vhd      ;         ;
 ; cte_cero.vhd                     ; yes             ; User VHDL File                     ; C:/Users/Sorteito/Documents/GitHub/TP-FPGA/MainV1.2/cte_cero.vhd               ;         ;
+; paredes.vhd                      ; yes             ; User VHDL File                     ; C:/Users/Sorteito/Documents/GitHub/TP-FPGA/MainV1.2/paredes.vhd                ;         ;
 +----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+---------+
 
 
@@ -195,12 +197,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;     -- Dedicated logic registers            ; 43        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 96        ;
+; I/O pins                                    ; 103       ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 43        ;
-; Total fan-out                               ; 823       ;
-; Average fan-out                             ; 2.13      ;
+; Total fan-out                               ; 830       ;
+; Average fan-out                             ; 2.08      ;
 +---------------------------------------------+-----------+
 
 
@@ -209,7 +211,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------+--------------+
 ; Compilation Hierarchy Node    ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                              ; Library Name ;
 +-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------+--------------+
-; |floodfill_para_simular       ; 151 (0)           ; 43 (0)       ; 0           ; 0            ; 0       ; 0         ; 96   ; 0            ; |floodfill_para_simular                          ; work         ;
+; |floodfill_para_simular       ; 151 (0)           ; 43 (0)       ; 0           ; 0            ; 0       ; 0         ; 103  ; 0            ; |floodfill_para_simular                          ; work         ;
 ;    |Comparador_Celda:inst168| ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |floodfill_para_simular|Comparador_Celda:inst168 ; work         ;
 ;    |Comparador_Celda:inst183| ; 10 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |floodfill_para_simular|Comparador_Celda:inst183 ; work         ;
 ;    |Comparador_Celda:inst198| ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |floodfill_para_simular|Comparador_Celda:inst198 ; work         ;
@@ -315,7 +317,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Nov 26 22:48:20 2024
+    Info: Processing started: Wed Nov 27 09:22:40 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ADC_tutorial -c ADC_tutorial
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file cte1.vhd
@@ -426,7 +428,11 @@ Info (12021): Found 2 design units, including 1 entities, in source file generat
 Info (12021): Found 2 design units, including 1 entities, in source file cte_cero.vhd
     Info (12022): Found design unit 1: cte_cero-Behavioral
     Info (12023): Found entity 1: cte_cero
+Info (12021): Found 2 design units, including 1 entities, in source file paredes.vhd
+    Info (12022): Found design unit 1: paredes-behavioral
+    Info (12023): Found entity 1: paredes
 Info (12127): Elaborating entity "floodfill_para_simular" for the top level hierarchy
+Warning (275011): Block or symbol "paredes" of instance "inst2" overlaps another block or symbol
 Info (12128): Elaborating entity "Comparador_Celda" for hierarchy "Comparador_Celda:inst168"
 Info (12128): Elaborating entity "mux_2x1_4bit" for hierarchy "mux_2x1_4bit:inst158"
 Info (12128): Elaborating entity "generate_constant" for hierarchy "generate_constant:inst3"
@@ -434,6 +440,8 @@ Info (12128): Elaborating entity "FFD_4bits" for hierarchy "FFD_4bits:inst260"
 Info (12128): Elaborating entity "sumador_4bits" for hierarchy "sumador_4bits:inst226"
 Info (12128): Elaborating entity "cte1" for hierarchy "cte1:inst"
 Info (12128): Elaborating entity "cte_cero" for hierarchy "cte_cero:inst6"
+Info (12128): Elaborating entity "pared" for hierarchy "pared:inst1"
+Info (12128): Elaborating entity "paredes" for hierarchy "paredes:inst2"
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "Dir_Min12[1]" is stuck at GND
     Warning (13410): Pin "Dir_Min3[1]" is stuck at VCC
@@ -463,14 +471,22 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 261 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
+Warning (21074): Design contains 7 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "S"
+    Warning (15610): No output dependent on input pin "O_1"
+    Warning (15610): No output dependent on input pin "O_0"
+    Warning (15610): No output dependent on input pin "pared_actual[0]"
+    Warning (15610): No output dependent on input pin "pared_actual[1]"
+    Warning (15610): No output dependent on input pin "pared_actual[2]"
+    Warning (15610): No output dependent on input pin "pared_actual[3]"
+Info (21057): Implemented 268 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
     Info (21059): Implemented 94 output pins
     Info (21061): Implemented 165 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 28 warnings
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 37 warnings
     Info: Peak virtual memory: 4634 megabytes
-    Info: Processing ended: Tue Nov 26 22:48:23 2024
-    Info: Elapsed time: 00:00:03
+    Info: Processing ended: Wed Nov 27 09:22:44 2024
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:01
 
 
