@@ -17,15 +17,15 @@
 # Loading work.floodfill_para_simular_vlg_vec_tst
 # Loading work.floodfill_para_simular
 # Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
 # Loading cycloneive_ver.cycloneive_io_ibuf
 # Loading cycloneive_ver.cycloneive_clkctrl
 # Loading cycloneive_ver.cycloneive_mux41
 # Loading cycloneive_ver.cycloneive_ena_reg
 # Loading cycloneive_ver.cycloneive_io_obuf
-# Loading altera_ver.dffeas
 # Loading work.floodfill_para_simular_vlg_sample_tst
 # Loading work.floodfill_para_simular_vlg_check_tst
 # Loading altera_ver.PRIM_GDFF_LOW
 # Simulation passed !
-# ** Note: $finish    : ADC_tutorial.vt(2063)
+# ** Note: $finish    : ADC_tutorial.vt(2200)
 #    Time: 1 us  Iteration: 0  Instance: /floodfill_para_simular_vlg_vec_tst/tb_out

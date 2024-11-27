@@ -1,16 +1,16 @@
-Fitter Status : Successful - Wed Nov 27 09:22:53 2024
+Fitter Status : Successful - Wed Nov 27 19:24:44 2024
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : ADC_tutorial
-Top-level Entity Name : floodfill_para_simular
+Top-level Entity Name : main
 Family : Cyclone IV E
 Device : EP4CE22F17C6
 Timing Models : Final
-Total logic elements : 155 / 22,320 ( < 1 % )
-    Total combinational functions : 152 / 22,320 ( < 1 % )
-    Dedicated logic registers : 43 / 22,320 ( < 1 % )
-Total registers : 43
-Total pins : 103 / 154 ( 67 % )
+Total logic elements : 236 / 22,320 ( 1 % )
+    Total combinational functions : 202 / 22,320 ( < 1 % )
+    Dedicated logic registers : 158 / 22,320 ( < 1 % )
+Total registers : 158
+Total pins : 128 / 154 ( 83 % )
 Total virtual pins : 0
 Total memory bits : 0 / 608,256 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
-Total PLLs : 0 / 4 ( 0 % )
+Total PLLs : 2 / 4 ( 50 % )

@@ -2,6 +2,7 @@ library verilog;
 use verilog.vl_types.all;
 entity floodfill_para_simular_vlg_check_tst is
     port(
+        dir_min         : in     vl_logic_vector(1 downto 0);
         Dir_Min2        : in     vl_logic_vector(1 downto 0);
         Dir_Min3        : in     vl_logic_vector(1 downto 0);
         Dir_Min4        : in     vl_logic_vector(1 downto 0);
@@ -17,6 +18,9 @@ entity floodfill_para_simular_vlg_check_tst is
         \Dir_Min_1_\    : in     vl_logic_vector(1 downto 0);
         \Dir_Min_10_\   : in     vl_logic_vector(1 downto 0);
         \Dir_Min_11_\   : in     vl_logic_vector(1 downto 0);
+        FW              : in     vl_logic;
+        girar           : in     vl_logic;
+        izq_der         : in     vl_logic;
         Mi_Peso2        : in     vl_logic_vector(3 downto 0);
         Mi_Peso3        : in     vl_logic_vector(3 downto 0);
         Mi_Peso4        : in     vl_logic_vector(3 downto 0);
@@ -29,7 +33,7 @@ entity floodfill_para_simular_vlg_check_tst is
         Mi_Peso13       : in     vl_logic_vector(3 downto 0);
         Mi_Peso14       : in     vl_logic_vector(3 downto 0);
         Mi_Peso15       : in     vl_logic_vector(3 downto 0);
-        Mi_Peso115      : in     vl_logic_vector(3 downto 0);
+        \Mi_Peso_0_\    : in     vl_logic_vector(3 downto 0);
         \Mi_Peso_1_\    : in     vl_logic_vector(3 downto 0);
         \Mi_Peso_10_\   : in     vl_logic_vector(3 downto 0);
         \Mi_Peso_11_\   : in     vl_logic_vector(3 downto 0);

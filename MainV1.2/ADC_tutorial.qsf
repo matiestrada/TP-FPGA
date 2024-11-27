@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE22F17C6
-set_global_assignment -name TOP_LEVEL_ENTITY floodfill_para_simular
+set_global_assignment -name TOP_LEVEL_ENTITY main
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:07:09  NOVEMBER 07, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -79,6 +79,7 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_s
 set_location_assignment PIN_A8 -to Sensor_Frente
 set_global_assignment -name SLD_FILE "C:/Users/Sorteito/Documents/GitHub/TP-FPGA/MainV1.2/stp2_auto_stripped.stp"
 set_location_assignment PIN_B8 -to Sensor_Linea
+set_global_assignment -name SMF_FILE giro_final.smf
 set_global_assignment -name VHDL_FILE cte1.vhd
 set_global_assignment -name VHDL_FILE control_prueba.vhd
 set_global_assignment -name SMF_FILE ADC_tutorial.smf
@@ -134,14 +135,20 @@ set_global_assignment -name VHDL_FILE FFD_4bits.vhd
 set_global_assignment -name BDF_FILE Main_prueba.bdf
 set_global_assignment -name VHDL_FILE pared.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform3.vwf
-set_global_assignment -name BDF_FILE Block1.bdf
 set_global_assignment -name VHDL_FILE generate_constant.vhd
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform4.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform5.vwf
 set_global_assignment -name VHDL_FILE cte_cero.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE pruebaflood.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/Sorteito/Documents/GitHub/TP-FPGA/MainV1.2/pruebaflood.vwf"
 set_global_assignment -name VHDL_FILE paredes.vhd
+set_global_assignment -name BDF_FILE pruebaparedes.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE pruebaparedes.vwf
+set_global_assignment -name VHDL_FILE mux_16x1_2bit.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform6.vwf
+set_global_assignment -name TEXT_FILE control.txt
+set_global_assignment -name VHDL_FILE control.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform7.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/Sorteito/Documents/GitHub/TP-FPGA/MainV1.2/Waveform7.vwf"
+set_global_assignment -name BDF_FILE main.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

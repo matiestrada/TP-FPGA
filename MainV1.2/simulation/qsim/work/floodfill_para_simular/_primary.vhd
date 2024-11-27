@@ -2,9 +2,19 @@ library verilog;
 use verilog.vl_types.all;
 entity floodfill_para_simular is
     port(
-        Dir_Min12       : out    vl_logic_vector(1 downto 0);
+        FW              : out    vl_logic;
         clk             : in     vl_logic;
         reset           : in     vl_logic;
+        c_casilla       : in     vl_logic;
+        fin_giro        : in     vl_logic;
+        dir_min         : out    vl_logic_vector(1 downto 0);
+        S               : in     vl_logic;
+        O_1             : in     vl_logic;
+        O_0             : in     vl_logic;
+        pos             : in     vl_logic_vector(0 to 3);
+        girar           : out    vl_logic;
+        izq_der         : out    vl_logic;
+        Dir_Min12       : out    vl_logic_vector(1 downto 0);
         Dir_Min13       : out    vl_logic_vector(1 downto 0);
         Dir_Min14       : out    vl_logic_vector(1 downto 0);
         Dir_Min15       : out    vl_logic_vector(1 downto 0);
@@ -19,7 +29,6 @@ entity floodfill_para_simular is
         \Dir_Min_10_\   : out    vl_logic_vector(1 downto 0);
         \Dir_Min_11_\   : out    vl_logic_vector(1 downto 0);
         \Dir_Min_1_\    : out    vl_logic_vector(1 downto 0);
-        Mi_Peso115      : out    vl_logic_vector(3 downto 0);
         Mi_Peso12       : out    vl_logic_vector(3 downto 0);
         Mi_Peso13       : out    vl_logic_vector(3 downto 0);
         Mi_Peso14       : out    vl_logic_vector(3 downto 0);
@@ -32,6 +41,7 @@ entity floodfill_para_simular is
         Mi_Peso7        : out    vl_logic_vector(3 downto 0);
         Mi_Peso8        : out    vl_logic_vector(3 downto 0);
         Mi_Peso9        : out    vl_logic_vector(3 downto 0);
+        \Mi_Peso_0_\    : out    vl_logic_vector(3 downto 0);
         \Mi_Peso_10_\   : out    vl_logic_vector(3 downto 0);
         \Mi_Peso_11_\   : out    vl_logic_vector(3 downto 0);
         \Mi_Peso_1_\    : out    vl_logic_vector(3 downto 0)
