@@ -7,30 +7,24 @@ ADC_DOUT => adc:inst1.ADC_DOUT
 ADC_SCLK <= adc:inst1.ADC_SCLK
 ADC_CS_N <= adc:inst1.ADC_CS_N
 M1I <= inst12.DB_MAX_OUTPUT_PORT_TYPE
-girar <= control:inst52.girar
-c_casilla => control:inst52.c_casilla
-fin_giro => control:inst52.fin_giro
-dir_min[0] <= mux_16x1_2bit:inst51.data_out[0]
-dir_min[1] <= mux_16x1_2bit:inst51.data_out[1]
-Sensor_Frente => inst2.IN0
 orientacion[0] <= Sistema_De_Orientacion:inst21.orientacion[0]
 orientacion[1] <= Sistema_De_Orientacion:inst21.orientacion[1]
-pos[3] => pared:inst19.sel[0]
-pos[3] => mux_16x1_2bit:inst51.sel[0]
-pos[2] => pared:inst19.sel[1]
-pos[2] => mux_16x1_2bit:inst51.sel[1]
-pos[1] => pared:inst19.sel[2]
-pos[1] => mux_16x1_2bit:inst51.sel[2]
-pos[0] => pared:inst19.sel[3]
-pos[0] => mux_16x1_2bit:inst51.sel[3]
-izq_der <= control:inst52.izq_der
-FW <= control:inst52.FW
+Sensor_Frente => inst2.IN0
+pos[3] <= subsistema_3:inst23.pos[0]
+pos[2] <= subsistema_3:inst23.pos[1]
+pos[1] <= subsistema_3:inst23.pos[2]
+pos[0] <= subsistema_3:inst23.pos[3]
+c_casilla <= Detector_Cambio_Casilla:inst8.Cambie_Casilla
+Sensor_Linea => Detector_Cambio_Casilla:inst8.Negro
 M0I <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 M1D <= inst14.DB_MAX_OUTPUT_PORT_TYPE
 M0D <= inst15.DB_MAX_OUTPUT_PORT_TYPE
 veld <= pllauto:inst.c1
 veli <= pllauto:inst.c1
-clockgral <= clk.DB_MAX_OUTPUT_PORT_TYPE
+CONTADORRR <= contador_10:inst9.fin_contador
+ini_contador_casilla <= Detector_Cambio_Casilla:inst8.Inicio_Cont
+dir_min[0] <= mux_16x1_2bit:inst51.data_out[0]
+dir_min[1] <= mux_16x1_2bit:inst51.data_out[1]
 Dir_Min12[0] <= dir[25].DB_MAX_OUTPUT_PORT_TYPE
 Dir_Min12[1] <= dir[24].DB_MAX_OUTPUT_PORT_TYPE
 Dir_Min13[0] <= dir[27].DB_MAX_OUTPUT_PORT_TYPE
@@ -67,7 +61,8 @@ LEDS[2] <= contador_6bits:inst16.salida[2]
 LEDS[3] <= contador_6bits:inst16.salida[3]
 LEDS[4] <= contador_6bits:inst16.salida[4]
 LEDS[5] <= contador_6bits:inst16.salida[5]
-Sensor_Linea => Detector_Cambio_Casilla:inst8.Negro
+LEDS[6] <= <GND>
+LEDS[7] <= <GND>
 Mi_Peso12[0] <= FFD_4bits:inst256.Q[0]
 Mi_Peso12[1] <= FFD_4bits:inst256.Q[1]
 Mi_Peso12[2] <= FFD_4bits:inst256.Q[2]
@@ -132,6 +127,8 @@ Mi_Peso_1_[0] <= FFD_4bits:inst377.Q[0]
 Mi_Peso_1_[1] <= FFD_4bits:inst377.Q[1]
 Mi_Peso_1_[2] <= FFD_4bits:inst377.Q[2]
 Mi_Peso_1_[3] <= FFD_4bits:inst377.Q[3]
+RESET_GRAL => ~NO_FANOUT~
+clockcito => ~NO_FANOUT~
 
 
 |main|adc:inst1
@@ -695,8 +692,8 @@ reset => M0I.OUTPUTSELECT
 reset => M1D.OUTPUTSELECT
 reset => M0D.OUTPUTSELECT
 reset => hab_cont.OUTPUTSELECT
-reset => gire_d.OUTPUTSELECT
-reset => gire_i.OUTPUTSELECT
+reset => gire.OUTPUTSELECT
+reset => gire.OUTPUTSELECT
 clock => fstate~1.DATAIN
 Giro => process_1.IN0
 Giro => process_1.IN0
@@ -715,8 +712,8 @@ M0I <= M0I.DB_MAX_OUTPUT_PORT_TYPE
 M1D <= M1D.DB_MAX_OUTPUT_PORT_TYPE
 M0D <= M0D.DB_MAX_OUTPUT_PORT_TYPE
 hab_cont <= hab_cont.DB_MAX_OUTPUT_PORT_TYPE
-gire_d <= gire_d.DB_MAX_OUTPUT_PORT_TYPE
-gire_i <= gire_i.DB_MAX_OUTPUT_PORT_TYPE
+gire[0] <= gire.DB_MAX_OUTPUT_PORT_TYPE
+gire[1] <= gire.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |main|clockgeneral:inst17
@@ -799,43 +796,62 @@ inclk[1] => pll1.CLK1
 locked <= locked.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|control:inst52
+|main|bloque_control:inst52
 clock => fstate~1.DATAIN
-reset => reg_fstate.Check.OUTPUTSELECT
-reset => reg_fstate.giro_i.OUTPUTSELECT
-reset => reg_fstate.giro_d.OUTPUTSELECT
-reset => reg_fstate.avanzo.OUTPUTSELECT
+reset => reg_fstate.check.OUTPUTSELECT
+reset => reg_fstate.giro_izq.OUTPUTSELECT
+reset => reg_fstate.giro_der.OUTPUTSELECT
+reset => reg_fstate.forward.OUTPUTSELECT
 reset => FW.OUTPUTSELECT
-reset => girar.OUTPUTSELECT
+reset => giro.OUTPUTSELECT
 reset => izq_der.OUTPUTSELECT
-orientacion[1] => Equal8.IN1
-orientacion[1] => Equal0.IN1
-orientacion[1] => Equal2.IN1
-orientacion[1] => Equal4.IN0
-orientacion[1] => Equal6.IN1
-orientacion[0] => Equal8.IN0
-orientacion[0] => Equal0.IN0
-orientacion[0] => Equal2.IN0
-orientacion[0] => Equal4.IN1
-orientacion[0] => Equal6.IN0
-dir_min[1] => Equal8.IN3
-dir_min[1] => Equal1.IN1
-dir_min[1] => Equal3.IN0
-dir_min[1] => Equal5.IN1
-dir_min[1] => Equal7.IN1
-dir_min[0] => Equal8.IN2
-dir_min[0] => Equal1.IN0
-dir_min[0] => Equal3.IN1
-dir_min[0] => Equal5.IN0
-dir_min[0] => Equal7.IN0
-c_casilla => Selector0.IN2
-c_casilla => Selector3.IN2
-fin_giro => Selector0.IN3
+dir_correcta => reg_fstate.DATAA
+dir_correcta => process_1.IN0
+dir_correcta => reg_fstate.DATAA
+dir_correcta => process_1.IN0
+dir_correcta => process_1.IN0
+dir_correcta => process_1.IN0
+prioridad_i_d => process_1.IN1
+prioridad_i_d => process_1.IN1
+fin_giro => Selector0.IN1
+fin_giro => Selector0.IN2
 fin_giro => Selector1.IN2
 fin_giro => Selector2.IN2
+pared_delante => process_1.IN1
+pared_delante => process_1.IN1
 FW <= FW.DB_MAX_OUTPUT_PORT_TYPE
-girar <= girar.DB_MAX_OUTPUT_PORT_TYPE
+giro <= giro.DB_MAX_OUTPUT_PORT_TYPE
 izq_der <= izq_der.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|comparador_2bits:inst18
+A[0] => Equal0.IN1
+A[1] => Equal0.IN0
+B[0] => Equal0.IN3
+B[1] => Equal0.IN2
+igual <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|Sistema_De_Orientacion:inst21
+reset => reg_fstate.NORTE.OUTPUTSELECT
+reset => reg_fstate.SUR.OUTPUTSELECT
+reset => reg_fstate.ESTE.OUTPUTSELECT
+reset => reg_fstate.OESTE.OUTPUTSELECT
+reset => reg_fstate.NORTE_IDLE.OUTPUTSELECT
+reset => reg_fstate.SUR_IDLE.OUTPUTSELECT
+reset => reg_fstate.ESTE_IDLE.OUTPUTSELECT
+reset => reg_fstate.OESTE_IDLE.OUTPUTSELECT
+reset => orientacion.OUTPUTSELECT
+reset => orientacion.OUTPUTSELECT
+clock => fstate~1.DATAIN
+INFO_GIRO[0] => Equal0.IN1
+INFO_GIRO[0] => Equal1.IN1
+INFO_GIRO[0] => Equal2.IN1
+INFO_GIRO[1] => Equal0.IN0
+INFO_GIRO[1] => Equal1.IN0
+INFO_GIRO[1] => Equal2.IN0
+orientacion[0] <= orientacion.DB_MAX_OUTPUT_PORT_TYPE
+orientacion[1] <= orientacion.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |main|mux_16x1_2bit:inst51
@@ -1473,28 +1489,89 @@ P[2] <= P.DB_MAX_OUTPUT_PORT_TYPE
 P[3] <= P.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|Sistema_De_Orientacion:inst21
-reset => reg_fstate.NORTE.OUTPUTSELECT
-reset => reg_fstate.SUR.OUTPUTSELECT
-reset => reg_fstate.ESTE.OUTPUTSELECT
-reset => reg_fstate.OESTE.OUTPUTSELECT
-reset => reg_fstate.NORTE_IDLE.OUTPUTSELECT
-reset => reg_fstate.SUR_IDLE.OUTPUTSELECT
-reset => reg_fstate.ESTE_IDLE.OUTPUTSELECT
-reset => reg_fstate.OESTE_IDLE.OUTPUTSELECT
-reset => orientacion.OUTPUTSELECT
-reset => orientacion.OUTPUTSELECT
+|main|subsistema_3:inst23
+reset => reg_fstate.S00.OUTPUTSELECT
+reset => reg_fstate.S01.OUTPUTSELECT
+reset => reg_fstate.S02.OUTPUTSELECT
+reset => reg_fstate.S03.OUTPUTSELECT
+reset => reg_fstate.S10.OUTPUTSELECT
+reset => reg_fstate.S11.OUTPUTSELECT
+reset => reg_fstate.S12.OUTPUTSELECT
+reset => reg_fstate.S13.OUTPUTSELECT
+reset => reg_fstate.S20.OUTPUTSELECT
+reset => reg_fstate.S21.OUTPUTSELECT
+reset => reg_fstate.S22.OUTPUTSELECT
+reset => reg_fstate.S23.OUTPUTSELECT
+reset => reg_fstate.S30.OUTPUTSELECT
+reset => reg_fstate.S31.OUTPUTSELECT
+reset => reg_fstate.S32.OUTPUTSELECT
+reset => reg_fstate.S33.OUTPUTSELECT
+reset => pos.OUTPUTSELECT
+reset => pos.OUTPUTSELECT
+reset => pos.OUTPUTSELECT
+reset => pos.OUTPUTSELECT
 clock => fstate~1.DATAIN
-INFO_GIRO[0] => Equal0.IN1
-INFO_GIRO[0] => Equal1.IN1
-INFO_GIRO[0] => Equal2.IN1
-INFO_GIRO[0] => Equal3.IN0
-INFO_GIRO[1] => Equal0.IN0
-INFO_GIRO[1] => Equal1.IN0
-INFO_GIRO[1] => Equal2.IN0
-INFO_GIRO[1] => Equal3.IN1
-orientacion[0] <= orientacion.DB_MAX_OUTPUT_PORT_TYPE
-orientacion[1] <= orientacion.DB_MAX_OUTPUT_PORT_TYPE
+x => process_1.IN0
+x => process_1.IN0
+x => process_1.IN0
+x => process_1.IN0
+y => process_1.IN1
+y => process_1.IN1
+y => process_1.IN1
+y => process_1.IN1
+cambio => process_1.IN1
+cambio => process_1.IN1
+cambio => process_1.IN1
+cambio => process_1.IN1
+pos[0] <= pos.DB_MAX_OUTPUT_PORT_TYPE
+pos[1] <= pos.DB_MAX_OUTPUT_PORT_TYPE
+pos[2] <= pos.DB_MAX_OUTPUT_PORT_TYPE
+pos[3] <= pos.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|Detector_Cambio_Casilla:inst8
+reset => reg_fstate.Idle.OUTPUTSELECT
+reset => reg_fstate.Detecto_Blanco.OUTPUTSELECT
+reset => reg_fstate.Detecto_Negro.OUTPUTSELECT
+reset => reg_fstate.Confirmo_N.OUTPUTSELECT
+reset => reg_fstate.Casilla_Cambiada.OUTPUTSELECT
+reset => Cambie_Casilla.OUTPUTSELECT
+reset => Inicio_Cont.OUTPUTSELECT
+clock => fstate~1.DATAIN
+Negro => process_1.IN0
+Negro => process_1.IN0
+Negro => reg_fstate.DATAA
+Negro => Selector2.IN4
+Negro => process_1.IN0
+Negro => Selector1.IN1
+Negro => reg_fstate.DATAA
+Negro => Selector3.IN2
+Negro => reg_fstate.DATAB
+Hab_Detector => process_1.IN1
+Hab_Detector => process_1.IN1
+Hab_Detector => reg_fstate.OUTPUTSELECT
+Hab_Detector => reg_fstate.OUTPUTSELECT
+Hab_Detector => reg_fstate.OUTPUTSELECT
+Fin_Cont => process_1.IN1
+Cambie_Casilla <= Cambie_Casilla.DB_MAX_OUTPUT_PORT_TYPE
+Inicio_Cont <= Inicio_Cont.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|contador_10:inst9
+clk => fin_contador~reg0.CLK
+clk => contando.CLK
+clk => contador[0].CLK
+clk => contador[1].CLK
+clk => contador[2].CLK
+clk => contador[3].CLK
+reset => contador.OUTPUTSELECT
+reset => contador.OUTPUTSELECT
+reset => contador.OUTPUTSELECT
+reset => contador.OUTPUTSELECT
+reset => contando.OUTPUTSELECT
+reset => fin_contador.OUTPUTSELECT
+inicio_contador => process_0.IN1
+fin_contador <= fin_contador~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |main|FFD_4bits:inst313
@@ -4023,6 +4100,28 @@ y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|main|prioridad_giro:inst79
+clk => current_state.CLK
+reset => current_state.ACLR
+orientacion[0] => Equal0.IN1
+orientacion[0] => Equal2.IN0
+orientacion[0] => Equal4.IN1
+orientacion[0] => Equal6.IN1
+orientacion[1] => Equal0.IN0
+orientacion[1] => Equal2.IN1
+orientacion[1] => Equal4.IN0
+orientacion[1] => Equal6.IN0
+dir_min[0] => Equal1.IN1
+dir_min[0] => Equal3.IN0
+dir_min[0] => Equal5.IN1
+dir_min[0] => Equal7.IN1
+dir_min[1] => Equal1.IN0
+dir_min[1] => Equal3.IN1
+dir_min[1] => Equal5.IN0
+dir_min[1] => Equal7.IN0
+p_izq_der <= current_state.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |main|contador_7600:inst7
 clk => fin_contador~reg0.CLK
 clk => count[0].CLK
@@ -4228,85 +4327,5 @@ salida[2] <= contador[2].DB_MAX_OUTPUT_PORT_TYPE
 salida[3] <= contador[3].DB_MAX_OUTPUT_PORT_TYPE
 salida[4] <= contador[4].DB_MAX_OUTPUT_PORT_TYPE
 salida[5] <= contador[5].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|Detector_Cambio_Casilla:inst8
-reset => reg_fstate.Idle.OUTPUTSELECT
-reset => reg_fstate.Detecto_Blanco.OUTPUTSELECT
-reset => reg_fstate.Detecto_Negro.OUTPUTSELECT
-reset => reg_fstate.Confirmo_N.OUTPUTSELECT
-reset => reg_fstate.Casilla_Cambiada.OUTPUTSELECT
-reset => Cambie_Casilla.OUTPUTSELECT
-reset => Inicio_Cont.OUTPUTSELECT
-clock => fstate~1.DATAIN
-Negro => process_1.IN0
-Negro => process_1.IN0
-Negro => reg_fstate.DATAA
-Negro => Selector2.IN4
-Negro => process_1.IN0
-Negro => Selector1.IN1
-Negro => reg_fstate.DATAA
-Negro => Selector3.IN2
-Negro => reg_fstate.DATAB
-Hab_Detector => process_1.IN1
-Hab_Detector => process_1.IN1
-Hab_Detector => reg_fstate.OUTPUTSELECT
-Hab_Detector => reg_fstate.OUTPUTSELECT
-Hab_Detector => reg_fstate.OUTPUTSELECT
-Fin_Cont => process_1.IN1
-Cambie_Casilla <= Cambie_Casilla.DB_MAX_OUTPUT_PORT_TYPE
-Inicio_Cont <= Inicio_Cont.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|contador_10:inst9
-clk => fin_contador~reg0.CLK
-clk => contando.CLK
-clk => contador[0].CLK
-clk => contador[1].CLK
-clk => contador[2].CLK
-clk => contador[3].CLK
-reset => contador.OUTPUTSELECT
-reset => contador.OUTPUTSELECT
-reset => contador.OUTPUTSELECT
-reset => contador.OUTPUTSELECT
-reset => contando.OUTPUTSELECT
-reset => fin_contador.OUTPUTSELECT
-inicio_contador => process_0.IN1
-fin_contador <= fin_contador~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|main|giro_nuevo:inst23
-reset => reg_fstate.idle.OUTPUTSELECT
-reset => reg_fstate.giro_izq.OUTPUTSELECT
-reset => reg_fstate.giro_der.OUTPUTSELECT
-reset => reg_fstate.confirmo_giro_d.OUTPUTSELECT
-reset => reg_fstate.confirmo_giro_i.OUTPUTSELECT
-reset => M1I.OUTPUTSELECT
-reset => M0I.OUTPUTSELECT
-reset => M1D.OUTPUTSELECT
-reset => M0D.OUTPUTSELECT
-reset => hab_cont.OUTPUTSELECT
-reset => gire_d.OUTPUTSELECT
-reset => gire_i.OUTPUTSELECT
-clock => fstate~1.DATAIN
-Giro => process_1.IN0
-Giro => process_1.IN0
-IZQ_DER => process_1.IN1
-IZQ_DER => process_1.IN1
-fin_cont => Selector3.IN1
-fin_cont => Selector4.IN1
-fin_cont => Selector1.IN2
-fin_cont => Selector2.IN2
-pared_delante => Selector1.IN4
-pared_delante => Selector2.IN4
-pared_delante => Selector0.IN2
-pared_delante => Selector0.IN3
-M1I <= M1I.DB_MAX_OUTPUT_PORT_TYPE
-M0I <= M0I.DB_MAX_OUTPUT_PORT_TYPE
-M1D <= M1D.DB_MAX_OUTPUT_PORT_TYPE
-M0D <= M0D.DB_MAX_OUTPUT_PORT_TYPE
-hab_cont <= hab_cont.DB_MAX_OUTPUT_PORT_TYPE
-gire_d <= gire_d.DB_MAX_OUTPUT_PORT_TYPE
-gire_i <= gire_i.DB_MAX_OUTPUT_PORT_TYPE
 
 

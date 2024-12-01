@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ADC_tutorial
-Wed Nov 27 19:24:32 2024
+Sat Nov 30 21:19:12 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -14,11 +14,11 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis IP Cores Summary
-  9. State Machine - |main|giro_nuevo:inst23|fstate
+  9. State Machine - |main|subsistema_1:inst4|fstate
  10. State Machine - |main|Detector_Cambio_Casilla:inst8|fstate
- 11. State Machine - |main|subsistema_1:inst4|fstate
+ 11. State Machine - |main|subsistema_3:inst23|fstate
  12. State Machine - |main|Sistema_De_Orientacion:inst21|fstate
- 13. State Machine - |main|control:inst52|fstate
+ 13. State Machine - |main|bloque_control:inst52|fstate
  14. State Machine - |main|giro_nuevo:inst5|fstate
  15. State Machine - |main|adc:inst1|adc_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL|currState
  16. Registers Removed During Synthesis
@@ -58,16 +58,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov 27 19:24:32 2024           ;
+; Analysis & Synthesis Status        ; Successful - Sat Nov 30 21:19:12 2024           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; ADC_tutorial                                    ;
 ; Top-level Entity Name              ; main                                            ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 237                                             ;
-;     Total combinational functions  ; 201                                             ;
-;     Dedicated logic registers      ; 158                                             ;
-; Total registers                    ; 158                                             ;
-; Total pins                         ; 128                                             ;
+; Total logic elements               ; 306                                             ;
+;     Total combinational functions  ; 270                                             ;
+;     Dedicated logic registers      ; 175                                             ;
+; Total registers                    ; 175                                             ;
+; Total pins                         ; 129                                             ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -183,6 +183,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; sumador_4bits.vhd                                ; yes             ; User VHDL File                     ; C:/Users/Sorteito/Documents/GitHub/TP-FPGA/MainV1.2/sumador_4bits.vhd                                ;         ;
 ; Sistema_De_Orientacion.vhd                       ; yes             ; User VHDL File                     ; C:/Users/Sorteito/Documents/GitHub/TP-FPGA/MainV1.2/Sistema_De_Orientacion.vhd                       ;         ;
 ; Detector_Cambio_Casilla.vhd                      ; yes             ; User VHDL File                     ; C:/Users/Sorteito/Documents/GitHub/TP-FPGA/MainV1.2/Detector_Cambio_Casilla.vhd                      ;         ;
+; subsistema_3.vhd                                 ; yes             ; User VHDL File                     ; C:/Users/Sorteito/Documents/GitHub/TP-FPGA/MainV1.2/subsistema_3.vhd                                 ;         ;
 ; subsistema_1.vhd                                 ; yes             ; User VHDL File                     ; C:/Users/Sorteito/Documents/GitHub/TP-FPGA/MainV1.2/subsistema_1.vhd                                 ;         ;
 ; Comparador.vhd                                   ; yes             ; User VHDL File                     ; C:/Users/Sorteito/Documents/GitHub/TP-FPGA/MainV1.2/Comparador.vhd                                   ;         ;
 ; Bloque_ADC_Controller/altera_up_avalon_adv_adc.v ; yes             ; User Verilog HDL File              ; C:/Users/Sorteito/Documents/GitHub/TP-FPGA/MainV1.2/Bloque_ADC_Controller/altera_up_avalon_adv_adc.v ;         ;
@@ -201,8 +202,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; cte_cero.vhd                                     ; yes             ; User VHDL File                     ; C:/Users/Sorteito/Documents/GitHub/TP-FPGA/MainV1.2/cte_cero.vhd                                     ;         ;
 ; paredes.vhd                                      ; yes             ; User VHDL File                     ; C:/Users/Sorteito/Documents/GitHub/TP-FPGA/MainV1.2/paredes.vhd                                      ;         ;
 ; mux_16x1_2bit.vhd                                ; yes             ; User VHDL File                     ; C:/Users/Sorteito/Documents/GitHub/TP-FPGA/MainV1.2/mux_16x1_2bit.vhd                                ;         ;
-; control.vhd                                      ; yes             ; User VHDL File                     ; C:/Users/Sorteito/Documents/GitHub/TP-FPGA/MainV1.2/control.vhd                                      ;         ;
 ; main.bdf                                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Sorteito/Documents/GitHub/TP-FPGA/MainV1.2/main.bdf                                         ;         ;
+; prioridad_giro.vhd                               ; yes             ; User VHDL File                     ; C:/Users/Sorteito/Documents/GitHub/TP-FPGA/MainV1.2/prioridad_giro.vhd                               ;         ;
+; bloque_control.vhdl                              ; yes             ; User VHDL File                     ; C:/Users/Sorteito/Documents/GitHub/TP-FPGA/MainV1.2/bloque_control.vhdl                              ;         ;
+; comparador_2bits.vhd                             ; yes             ; User VHDL File                     ; C:/Users/Sorteito/Documents/GitHub/TP-FPGA/MainV1.2/comparador_2bits.vhd                             ;         ;
 ; altpll.tdf                                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altpll.tdf                                         ;         ;
 ; aglobal130.inc                                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                                     ;         ;
 ; stratix_pll.inc                                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_pll.inc                                    ;         ;
@@ -218,31 +221,31 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                               ;
 +---------------------------------------------+-------------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 237                                                                                 ;
+; Estimated Total logic elements              ; 306                                                                                 ;
 ;                                             ;                                                                                     ;
-; Total combinational functions               ; 201                                                                                 ;
+; Total combinational functions               ; 270                                                                                 ;
 ; Logic element usage by number of LUT inputs ;                                                                                     ;
-;     -- 4 input functions                    ; 71                                                                                  ;
-;     -- 3 input functions                    ; 33                                                                                  ;
-;     -- <=2 input functions                  ; 97                                                                                  ;
+;     -- 4 input functions                    ; 126                                                                                 ;
+;     -- 3 input functions                    ; 46                                                                                  ;
+;     -- <=2 input functions                  ; 98                                                                                  ;
 ;                                             ;                                                                                     ;
 ; Logic elements by mode                      ;                                                                                     ;
-;     -- normal mode                          ; 158                                                                                 ;
+;     -- normal mode                          ; 227                                                                                 ;
 ;     -- arithmetic mode                      ; 43                                                                                  ;
 ;                                             ;                                                                                     ;
-; Total registers                             ; 158                                                                                 ;
-;     -- Dedicated logic registers            ; 158                                                                                 ;
+; Total registers                             ; 175                                                                                 ;
+;     -- Dedicated logic registers            ; 175                                                                                 ;
 ;     -- I/O registers                        ; 0                                                                                   ;
 ;                                             ;                                                                                     ;
-; I/O pins                                    ; 128                                                                                 ;
+; I/O pins                                    ; 129                                                                                 ;
 ; Embedded Multiplier 9-bit elements          ; 0                                                                                   ;
 ; Total PLLs                                  ; 2                                                                                   ;
 ;     -- PLLs                                 ; 2                                                                                   ;
 ;                                             ;                                                                                     ;
 ; Maximum fan-out node                        ; pllauto:inst|altpll:altpll_component|pllauto_altpll:auto_generated|wire_pll1_clk[0] ;
 ; Maximum fan-out                             ; 93                                                                                  ;
-; Total fan-out                               ; 1234                                                                                ;
-; Average fan-out                             ; 2.00                                                                                ;
+; Total fan-out                               ; 1533                                                                                ;
+; Average fan-out                             ; 2.17                                                                                ;
 +---------------------------------------------+-------------------------------------------------------------------------------------+
 
 
@@ -251,25 +254,27 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                    ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                  ; Library Name ;
 +-----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------+--------------+
-; |main                                         ; 201 (3)           ; 158 (0)      ; 0           ; 0            ; 0       ; 0         ; 128  ; 0            ; |main                                                                                ; work         ;
+; |main                                         ; 270 (3)           ; 175 (0)      ; 0           ; 0            ; 0       ; 0         ; 129  ; 0            ; |main                                                                                ; work         ;
 ;    |Detector_Cambio_Casilla:inst8|            ; 4 (4)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|Detector_Cambio_Casilla:inst8                                                  ; work         ;
-;    |Sistema_De_Orientacion:inst21|            ; 15 (15)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|Sistema_De_Orientacion:inst21                                                  ; work         ;
+;    |Sistema_De_Orientacion:inst21|            ; 17 (17)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|Sistema_De_Orientacion:inst21                                                  ; work         ;
 ;    |adc:inst1|                                ; 78 (0)            ; 90 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|adc:inst1                                                                      ; work         ;
 ;       |adc_adc_mega_0:adc_mega_0|             ; 78 (26)           ; 90 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|adc:inst1|adc_adc_mega_0:adc_mega_0                                            ; work         ;
 ;          |altera_up_avalon_adv_adc:ADC_CTRL|  ; 52 (52)           ; 65 (65)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|adc:inst1|adc_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL          ; work         ;
+;    |bloque_control:inst52|                    ; 7 (7)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|bloque_control:inst52                                                          ; work         ;
 ;    |clockgeneral:inst17|                      ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|clockgeneral:inst17                                                            ; work         ;
 ;       |altpll:altpll_component|               ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|clockgeneral:inst17|altpll:altpll_component                                    ; work         ;
 ;          |clockgeneral_altpll:auto_generated| ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|clockgeneral:inst17|altpll:altpll_component|clockgeneral_altpll:auto_generated ; work         ;
-;    |comparador:inst6|                         ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|comparador:inst6                                                               ; work         ;
+;    |comparador:inst6|                         ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|comparador:inst6                                                               ; work         ;
 ;    |contador_10:inst9|                        ; 11 (11)           ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|contador_10:inst9                                                              ; work         ;
 ;    |contador_6bits:inst16|                    ; 8 (8)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|contador_6bits:inst16                                                          ; work         ;
 ;    |contador_7600:inst7|                      ; 43 (43)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|contador_7600:inst7                                                            ; work         ;
-;    |control:inst52|                           ; 8 (8)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|control:inst52                                                                 ; work         ;
-;    |giro_nuevo:inst5|                         ; 11 (11)           ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|giro_nuevo:inst5                                                               ; work         ;
+;    |giro_nuevo:inst5|                         ; 12 (12)           ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|giro_nuevo:inst5                                                               ; work         ;
 ;    |pllauto:inst|                             ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|pllauto:inst                                                                   ; work         ;
 ;       |altpll:altpll_component|               ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|pllauto:inst|altpll:altpll_component                                           ; work         ;
 ;          |pllauto_altpll:auto_generated|      ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|pllauto:inst|altpll:altpll_component|pllauto_altpll:auto_generated             ; work         ;
+;    |prioridad_giro:inst79|                    ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|prioridad_giro:inst79                                                          ; work         ;
 ;    |subsistema_1:inst4|                       ; 7 (7)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|subsistema_1:inst4                                                             ; work         ;
+;    |subsistema_3:inst23|                      ; 64 (64)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|subsistema_3:inst23                                                            ; work         ;
 +-----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -285,17 +290,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 Encoding Type:  One-Hot
-+----------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |main|giro_nuevo:inst23|fstate                                                                             ;
-+------------------------+------------------------+------------------------+-----------------+-----------------+-------------+
-; Name                   ; fstate.confirmo_giro_i ; fstate.confirmo_giro_d ; fstate.giro_der ; fstate.giro_izq ; fstate.idle ;
-+------------------------+------------------------+------------------------+-----------------+-----------------+-------------+
-; fstate.idle            ; 0                      ; 0                      ; 0               ; 0               ; 0           ;
-; fstate.giro_izq        ; 0                      ; 0                      ; 0               ; 1               ; 1           ;
-; fstate.giro_der        ; 0                      ; 0                      ; 1               ; 0               ; 1           ;
-; fstate.confirmo_giro_d ; 0                      ; 1                      ; 0               ; 0               ; 1           ;
-; fstate.confirmo_giro_i ; 1                      ; 0                      ; 0               ; 0               ; 1           ;
-+------------------------+------------------------+------------------------+-----------------+-----------------+-------------+
++----------------------------------------------------------------------------------------+
+; State Machine - |main|subsistema_1:inst4|fstate                                        ;
++------------------+------------------+------------------+-----------------+-------------+
+; Name             ; fstate.Pared_der ; fstate.Pared_Izq ; fstate.Centrado ; fstate.Idle ;
++------------------+------------------+------------------+-----------------+-------------+
+; fstate.Idle      ; 0                ; 0                ; 0               ; 0           ;
+; fstate.Centrado  ; 0                ; 0                ; 1               ; 1           ;
+; fstate.Pared_Izq ; 0                ; 1                ; 0               ; 1           ;
+; fstate.Pared_der ; 1                ; 0                ; 0               ; 1           ;
++------------------+------------------+------------------+-----------------+-------------+
 
 
 Encoding Type:  One-Hot
@@ -313,16 +317,28 @@ Encoding Type:  One-Hot
 
 
 Encoding Type:  One-Hot
-+----------------------------------------------------------------------------------------+
-; State Machine - |main|subsistema_1:inst4|fstate                                        ;
-+------------------+------------------+------------------+-----------------+-------------+
-; Name             ; fstate.Pared_der ; fstate.Pared_Izq ; fstate.Centrado ; fstate.Idle ;
-+------------------+------------------+------------------+-----------------+-------------+
-; fstate.Idle      ; 0                ; 0                ; 0               ; 0           ;
-; fstate.Centrado  ; 0                ; 0                ; 1               ; 1           ;
-; fstate.Pared_Izq ; 0                ; 1                ; 0               ; 1           ;
-; fstate.Pared_der ; 1                ; 0                ; 0               ; 1           ;
-+------------------+------------------+------------------+-----------------+-------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |main|subsistema_3:inst23|fstate                                                                                                                                                                           ;
++------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+
+; Name       ; fstate.S00 ; fstate.S32 ; fstate.S31 ; fstate.S30 ; fstate.S23 ; fstate.S22 ; fstate.S21 ; fstate.S20 ; fstate.S13 ; fstate.S12 ; fstate.S11 ; fstate.S10 ; fstate.S03 ; fstate.S02 ; fstate.S01 ; fstate.S33 ;
++------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+
+; fstate.S33 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ;
+; fstate.S01 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 1          ;
+; fstate.S02 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 1          ;
+; fstate.S03 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 1          ;
+; fstate.S10 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 1          ;
+; fstate.S11 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 1          ;
+; fstate.S12 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ;
+; fstate.S13 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ;
+; fstate.S20 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ;
+; fstate.S21 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ;
+; fstate.S22 ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ;
+; fstate.S23 ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ;
+; fstate.S30 ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ;
+; fstate.S31 ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ;
+; fstate.S32 ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ;
+; fstate.S00 ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ;
++------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+
 
 
 Encoding Type:  One-Hot
@@ -343,16 +359,16 @@ Encoding Type:  One-Hot
 
 
 Encoding Type:  One-Hot
-+------------------------------------------------------------------------------+
-; State Machine - |main|control:inst52|fstate                                  ;
-+---------------+---------------+---------------+---------------+--------------+
-; Name          ; fstate.avanzo ; fstate.giro_d ; fstate.giro_i ; fstate.Check ;
-+---------------+---------------+---------------+---------------+--------------+
-; fstate.Check  ; 0             ; 0             ; 0             ; 0            ;
-; fstate.giro_i ; 0             ; 0             ; 1             ; 1            ;
-; fstate.giro_d ; 0             ; 1             ; 0             ; 1            ;
-; fstate.avanzo ; 1             ; 0             ; 0             ; 1            ;
-+---------------+---------------+---------------+---------------+--------------+
++-------------------------------------------------------------------------------------+
+; State Machine - |main|bloque_control:inst52|fstate                                  ;
++-----------------+----------------+-----------------+-----------------+--------------+
+; Name            ; fstate.forward ; fstate.giro_der ; fstate.giro_izq ; fstate.check ;
++-----------------+----------------+-----------------+-----------------+--------------+
+; fstate.check    ; 0              ; 0               ; 0               ; 0            ;
+; fstate.giro_izq ; 0              ; 0               ; 1               ; 1            ;
+; fstate.giro_der ; 0              ; 1               ; 0               ; 1            ;
+; fstate.forward  ; 1              ; 0               ; 0               ; 1            ;
++-----------------+----------------+-----------------+-----------------+--------------+
 
 
 Encoding Type:  One-Hot
@@ -404,17 +420,12 @@ Encoding Type:  One-Hot
 ; FFD_4bits:inst261|Q[0..3]                                                                       ; Stuck at GND due to stuck port data_in ;
 ; FFD_4bits:inst313|Q[0..3]                                                                       ; Stuck at GND due to stuck port data_in ;
 ; FFD_4bits:inst377|Q[0..3]                                                                       ; Stuck at GND due to stuck port data_in ;
-; giro_nuevo:inst23|fstate.idle                                                                   ; Lost fanout                            ;
-; giro_nuevo:inst23|fstate.confirmo_giro_d                                                        ; Lost fanout                            ;
-; giro_nuevo:inst23|fstate.confirmo_giro_i                                                        ; Lost fanout                            ;
 ; Detector_Cambio_Casilla:inst8|fstate.Idle                                                       ; Lost fanout                            ;
 ; Detector_Cambio_Casilla:inst8|fstate.Detecto_Blanco                                             ; Lost fanout                            ;
 ; adc:inst1|adc_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL|currState~2               ; Lost fanout                            ;
 ; adc:inst1|adc_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL|currState~3               ; Lost fanout                            ;
-; giro_nuevo:inst23|fstate.giro_izq                                                               ; Stuck at GND due to stuck port clock   ;
-; giro_nuevo:inst23|fstate.giro_der                                                               ; Stuck at GND due to stuck port clock   ;
 ; subsistema_1:inst4|fstate.Centrado                                                              ; Lost fanout                            ;
-; Total Number of Removed Registers = 118                                                         ;                                        ;
+; Total Number of Removed Registers = 113                                                         ;                                        ;
 +-------------------------------------------------------------------------------------------------+----------------------------------------+
 
 
@@ -437,6 +448,8 @@ Encoding Type:  One-Hot
 ;                            ; due to stuck port data_in ; FFD_4bits:inst256|Q[0]                                                  ;
 ; pared:inst19|data2_out[42] ; Stuck at VCC              ; FFD_4bits:inst258|Q[3], FFD_4bits:inst258|Q[2], FFD_4bits:inst258|Q[1], ;
 ;                            ; due to stuck port data_in ; FFD_4bits:inst258|Q[0]                                                  ;
+; pared:inst19|data2_out[1]  ; Stuck at VCC              ; FFD_4bits:inst313|Q[1], FFD_4bits:inst377|Q[3], FFD_4bits:inst377|Q[1]  ;
+;                            ; due to stuck port data_in ;                                                                         ;
 ; pared:inst19|data2_out[2]  ; Stuck at VCC              ; FFD_4bits:inst297|Q[3], FFD_4bits:inst297|Q[2], FFD_4bits:inst297|Q[1]  ;
 ;                            ; due to stuck port data_in ;                                                                         ;
 ; pared:inst19|data2_out[22] ; Stuck at VCC              ; FFD_4bits:inst261|Q[2], FFD_4bits:inst313|Q[3], FFD_4bits:inst313|Q[0]  ;
@@ -451,13 +464,9 @@ Encoding Type:  One-Hot
 ;                            ; due to stuck port data_in ;                                                                         ;
 ; pared:inst19|data2_out[57] ; Stuck at VCC              ; FFD_4bits:inst259|Q[3], FFD_4bits:inst259|Q[1], FFD_4bits:inst259|Q[0]  ;
 ;                            ; due to stuck port data_in ;                                                                         ;
-; pared:inst19|data2_out[1]  ; Stuck at VCC              ; FFD_4bits:inst377|Q[3], FFD_4bits:inst377|Q[1]                          ;
-;                            ; due to stuck port data_in ;                                                                         ;
 ; pared:inst19|data2_out[6]  ; Stuck at VCC              ; FFD_4bits:inst313|Q[2], FFD_4bits:inst377|Q[2]                          ;
 ;                            ; due to stuck port data_in ;                                                                         ;
 ; pared:inst19|data2_out[9]  ; Stuck at VCC              ; FFD_4bits:inst409|Q[1]                                                  ;
-;                            ; due to stuck port data_in ;                                                                         ;
-; pared:inst19|data2_out[17] ; Stuck at VCC              ; FFD_4bits:inst313|Q[1]                                                  ;
 ;                            ; due to stuck port data_in ;                                                                         ;
 ; pared:inst19|data2_out[30] ; Stuck at VCC              ; FFD_4bits:inst281|Q[2]                                                  ;
 ;                            ; due to stuck port data_in ;                                                                         ;
@@ -473,7 +482,7 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 158   ;
+; Total registers                              ; 175   ;
 ; Number of registers using Synchronous Clear  ; 34    ;
 ; Number of registers using Synchronous Load   ; 8     ;
 ; Number of registers using Asynchronous Clear ; 42    ;
@@ -501,17 +510,17 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------+
-; 3:1                ; 24 bits   ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |main|adc:inst1|adc_adc_mega_0:adc_mega_0|CH1[1]                                              ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |main|adc:inst1|adc_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL|address[1]        ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |main|adc:inst1|adc_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL|counter[4]        ;
+; 3:1                ; 24 bits   ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |main|adc:inst1|adc_adc_mega_0:adc_mega_0|CH1[8]                                              ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |main|adc:inst1|adc_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL|address[0]        ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |main|adc:inst1|adc_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL|counter[3]        ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |main|adc:inst1|adc_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL|sclk_counter[3]   ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |main|contador_7600:inst7|count[20]                                                           ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |main|adc:inst1|adc_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL|addr_shift_reg[4] ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |main|adc:inst1|adc_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL|addr_shift_reg[1] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |main|contador_7600:inst7|count[29]                                                           ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |main|adc:inst1|adc_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL|addr_shift_reg[5] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |main|adc:inst1|adc_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL|addr_shift_reg[2] ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |main|contador_10:inst9|fin_contador                                                          ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |main|contador_10:inst9|contador[3]                                                           ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |main|adc:inst1|adc_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL|counter[0]        ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 2 LEs                ; 4 LEs                  ; No         ; |main|Detector_Cambio_Casilla:inst8|Selector1                                                 ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |main|adc:inst1|adc_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL|counter[2]        ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 2 LEs                ; 4 LEs                  ; No         ; |main|Detector_Cambio_Casilla:inst8|Selector2                                                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------+
 
 
@@ -1323,7 +1332,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -1333,9 +1342,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Nov 27 19:24:27 2024
+    Info: Processing started: Sat Nov 30 21:19:07 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ADC_tutorial -c ADC_tutorial
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file comparador_dir.vhd
+    Info (12022): Found design unit 1: comparador_dir-BEHAVIOR
+    Info (12023): Found entity 1: comparador_dir
+Info (12021): Found 1 design units, including 1 entities, in source file prueba_para_calibrar.bdf
+    Info (12023): Found entity 1: prueba_para_calibrar
 Info (12021): Found 2 design units, including 1 entities, in source file cte1.vhd
     Info (12022): Found design unit 1: cte1-Behavioral
     Info (12023): Found entity 1: cte1
@@ -1450,13 +1464,131 @@ Info (12021): Found 1 design units, including 1 entities, in source file pruebap
 Info (12021): Found 2 design units, including 1 entities, in source file mux_16x1_2bit.vhd
     Info (12022): Found design unit 1: mux_16x1_2bit-Behavioral
     Info (12023): Found entity 1: mux_16x1_2bit
-Info (12021): Found 2 design units, including 1 entities, in source file control.vhd
-    Info (12022): Found design unit 1: control-BEHAVIOR
-    Info (12023): Found entity 1: control
 Info (12021): Found 1 design units, including 1 entities, in source file main.bdf
     Info (12023): Found entity 1: main
+Info (12021): Found 1 design units, including 1 entities, in source file prueba_posicionamiento.bdf
+    Info (12023): Found entity 1: prueba_posicionamiento
+Info (12021): Found 1 design units, including 1 entities, in source file prueba_orientacion.bdf
+    Info (12023): Found entity 1: prueba_orientacion
+Info (12021): Found 2 design units, including 1 entities, in source file prioridad_giro.vhd
+    Info (12022): Found design unit 1: prioridad_giro-Behavioral
+    Info (12023): Found entity 1: prioridad_giro
+Info (12021): Found 1 design units, including 1 entities, in source file block5.bdf
+    Info (12023): Found entity 1: Block5
+Info (12021): Found 2 design units, including 1 entities, in source file bloque_control.vhdl
+    Info (12022): Found design unit 1: bloque_control-BEHAVIOR
+    Info (12023): Found entity 1: bloque_control
+Info (12021): Found 2 design units, including 1 entities, in source file comparador_2bits.vhd
+    Info (12022): Found design unit 1: comparador_2bits-Behavioral
+    Info (12023): Found entity 1: comparador_2bits
+Info (12021): Found 1 design units, including 1 entities, in source file prueba_giro.bdf
+    Info (12023): Found entity 1: prueba_giro
+Info (12021): Found 1 design units, including 1 entities, in source file prueba_floodfill.bdf
+    Info (12023): Found entity 1: prueba_floodfill
+Info (12021): Found 2 design units, including 1 entities, in source file control_general.vhd
+    Info (12022): Found design unit 1: control_general-rtl
+    Info (12023): Found entity 1: control_general
 Info (12127): Elaborating entity "main" for the top level hierarchy
-Warning (275011): Block or symbol "adc" of instance "inst1" overlaps another block or symbol
+Warning (275011): Block or symbol "Detector_Cambio_Casilla" of instance "inst8" overlaps another block or symbol
+Warning (275011): Block or symbol "GND" of instance "inst74" overlaps another block or symbol
+Warning (275085): Found inconsistent dimensions for element "hay_pared"
+Warning (275085): Found inconsistent dimensions for element "hay_pared"
+Warning (275080): Converted elements in bus name "hay_pared" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "hay_pared[63..0]" to "hay_pared63..0"
+    Warning (275081): Converted element name(s) from "hay_pared[7]" to "hay_pared7"
+    Warning (275081): Converted element name(s) from "hay_pared[1]" to "hay_pared1"
+    Warning (275081): Converted element name(s) from "hay_pared[16]" to "hay_pared16"
+    Warning (275081): Converted element name(s) from "hay_pared[2]" to "hay_pared2"
+    Warning (275081): Converted element name(s) from "hay_pared[17]" to "hay_pared17"
+    Warning (275081): Converted element name(s) from "hay_pared[23]" to "hay_pared23"
+    Warning (275081): Converted element name(s) from "hay_pared[18]" to "hay_pared18"
+    Warning (275081): Converted element name(s) from "hay_pared[32]" to "hay_pared32"
+    Warning (275081): Converted element name(s) from "hay_pared[18]" to "hay_pared18"
+    Warning (275081): Converted element name(s) from "hay_pared[32]" to "hay_pared32"
+    Warning (275081): Converted element name(s) from "hay_pared[33]" to "hay_pared33"
+    Warning (275081): Converted element name(s) from "hay_pared[39]" to "hay_pared39"
+    Warning (275081): Converted element name(s) from "hay_pared[48]" to "hay_pared48"
+    Warning (275081): Converted element name(s) from "hay_pared[34]" to "hay_pared34"
+    Warning (275081): Converted element name(s) from "hay_pared[48]" to "hay_pared48"
+    Warning (275081): Converted element name(s) from "hay_pared[34]" to "hay_pared34"
+    Warning (275081): Converted element name(s) from "hay_pared[49]" to "hay_pared49"
+    Warning (275081): Converted element name(s) from "hay_pared[55]" to "hay_pared55"
+    Warning (275081): Converted element name(s) from "hay_pared[5]" to "hay_pared5"
+    Warning (275081): Converted element name(s) from "hay_pared[11]" to "hay_pared11"
+    Warning (275081): Converted element name(s) from "hay_pared[20]" to "hay_pared20"
+    Warning (275081): Converted element name(s) from "hay_pared[6]" to "hay_pared6"
+    Warning (275081): Converted element name(s) from "hay_pared[20]" to "hay_pared20"
+    Warning (275081): Converted element name(s) from "hay_pared[6]" to "hay_pared6"
+    Warning (275081): Converted element name(s) from "hay_pared[21]" to "hay_pared21"
+    Warning (275081): Converted element name(s) from "hay_pared[27]" to "hay_pared27"
+    Warning (275081): Converted element name(s) from "hay_pared[36]" to "hay_pared36"
+    Warning (275081): Converted element name(s) from "hay_pared[22]" to "hay_pared22"
+    Warning (275081): Converted element name(s) from "hay_pared[17]" to "hay_pared17"
+    Warning (275081): Converted element name(s) from "hay_pared[23]" to "hay_pared23"
+    Warning (275081): Converted element name(s) from "hay_pared[36]" to "hay_pared36"
+    Warning (275081): Converted element name(s) from "hay_pared[22]" to "hay_pared22"
+    Warning (275081): Converted element name(s) from "hay_pared[37]" to "hay_pared37"
+    Warning (275081): Converted element name(s) from "hay_pared[43]" to "hay_pared43"
+    Warning (275081): Converted element name(s) from "hay_pared[52]" to "hay_pared52"
+    Warning (275081): Converted element name(s) from "hay_pared[38]" to "hay_pared38"
+    Warning (275081): Converted element name(s) from "hay_pared[33]" to "hay_pared33"
+    Warning (275081): Converted element name(s) from "hay_pared[39]" to "hay_pared39"
+    Warning (275081): Converted element name(s) from "hay_pared[52]" to "hay_pared52"
+    Warning (275081): Converted element name(s) from "hay_pared[38]" to "hay_pared38"
+    Warning (275081): Converted element name(s) from "hay_pared[53]" to "hay_pared53"
+    Warning (275081): Converted element name(s) from "hay_pared[59]" to "hay_pared59"
+    Warning (275081): Converted element name(s) from "hay_pared[49]" to "hay_pared49"
+    Warning (275081): Converted element name(s) from "hay_pared[55]" to "hay_pared55"
+    Warning (275081): Converted element name(s) from "hay_pared[9]" to "hay_pared9"
+    Warning (275081): Converted element name(s) from "hay_pared[15]" to "hay_pared15"
+    Warning (275081): Converted element name(s) from "hay_pared[24]" to "hay_pared24"
+    Warning (275081): Converted element name(s) from "hay_pared[10]" to "hay_pared10"
+    Warning (275081): Converted element name(s) from "hay_pared[5]" to "hay_pared5"
+    Warning (275081): Converted element name(s) from "hay_pared[11]" to "hay_pared11"
+    Warning (275081): Converted element name(s) from "hay_pared[24]" to "hay_pared24"
+    Warning (275081): Converted element name(s) from "hay_pared[10]" to "hay_pared10"
+    Warning (275081): Converted element name(s) from "hay_pared[25]" to "hay_pared25"
+    Warning (275081): Converted element name(s) from "hay_pared[31]" to "hay_pared31"
+    Warning (275081): Converted element name(s) from "hay_pared[40]" to "hay_pared40"
+    Warning (275081): Converted element name(s) from "hay_pared[26]" to "hay_pared26"
+    Warning (275081): Converted element name(s) from "hay_pared[21]" to "hay_pared21"
+    Warning (275081): Converted element name(s) from "hay_pared[27]" to "hay_pared27"
+    Warning (275081): Converted element name(s) from "hay_pared[40]" to "hay_pared40"
+    Warning (275081): Converted element name(s) from "hay_pared[26]" to "hay_pared26"
+    Warning (275081): Converted element name(s) from "hay_pared[41]" to "hay_pared41"
+    Warning (275081): Converted element name(s) from "hay_pared[47]" to "hay_pared47"
+    Warning (275081): Converted element name(s) from "hay_pared[56]" to "hay_pared56"
+    Warning (275081): Converted element name(s) from "hay_pared[42]" to "hay_pared42"
+    Warning (275081): Converted element name(s) from "hay_pared[37]" to "hay_pared37"
+    Warning (275081): Converted element name(s) from "hay_pared[43]" to "hay_pared43"
+    Warning (275081): Converted element name(s) from "hay_pared[42]" to "hay_pared42"
+    Warning (275081): Converted element name(s) from "hay_pared[56]" to "hay_pared56"
+    Warning (275081): Converted element name(s) from "hay_pared[57]" to "hay_pared57"
+    Warning (275081): Converted element name(s) from "hay_pared[63]" to "hay_pared63"
+    Warning (275081): Converted element name(s) from "hay_pared[59]" to "hay_pared59"
+    Warning (275081): Converted element name(s) from "hay_pared[53]" to "hay_pared53"
+    Warning (275081): Converted element name(s) from "hay_pared[14]" to "hay_pared14"
+    Warning (275081): Converted element name(s) from "hay_pared[28]" to "hay_pared28"
+    Warning (275081): Converted element name(s) from "hay_pared[14]" to "hay_pared14"
+    Warning (275081): Converted element name(s) from "hay_pared[28]" to "hay_pared28"
+    Warning (275081): Converted element name(s) from "hay_pared[9]" to "hay_pared9"
+    Warning (275081): Converted element name(s) from "hay_pared[15]" to "hay_pared15"
+    Warning (275081): Converted element name(s) from "hay_pared[30]" to "hay_pared30"
+    Warning (275081): Converted element name(s) from "hay_pared[44]" to "hay_pared44"
+    Warning (275081): Converted element name(s) from "hay_pared[31]" to "hay_pared31"
+    Warning (275081): Converted element name(s) from "hay_pared[25]" to "hay_pared25"
+    Warning (275081): Converted element name(s) from "hay_pared[30]" to "hay_pared30"
+    Warning (275081): Converted element name(s) from "hay_pared[44]" to "hay_pared44"
+    Warning (275081): Converted element name(s) from "hay_pared[46]" to "hay_pared46"
+    Warning (275081): Converted element name(s) from "hay_pared[60]" to "hay_pared60"
+    Warning (275081): Converted element name(s) from "hay_pared[41]" to "hay_pared41"
+    Warning (275081): Converted element name(s) from "hay_pared[47]" to "hay_pared47"
+    Warning (275081): Converted element name(s) from "hay_pared[46]" to "hay_pared46"
+    Warning (275081): Converted element name(s) from "hay_pared[60]" to "hay_pared60"
+    Warning (275081): Converted element name(s) from "hay_pared[63]" to "hay_pared63"
+    Warning (275081): Converted element name(s) from "hay_pared[57]" to "hay_pared57"
+Warning (275009): Pin "RESET_GRAL" not connected
+Warning (275009): Pin "clockcito" not connected
 Info (12128): Elaborating entity "adc" for hierarchy "adc:inst1"
 Info (12128): Elaborating entity "adc_adc_mega_0" for hierarchy "adc:inst1|adc_adc_mega_0:adc_mega_0"
 Info (12128): Elaborating entity "altera_up_avalon_adv_adc" for hierarchy "adc:inst1|adc_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL"
@@ -1589,24 +1721,27 @@ Info (12133): Instantiated megafunction "clockgeneral:inst17|altpll:altpll_compo
 Info (12021): Found 1 design units, including 1 entities, in source file db/clockgeneral_altpll.v
     Info (12023): Found entity 1: clockgeneral_altpll
 Info (12128): Elaborating entity "clockgeneral_altpll" for hierarchy "clockgeneral:inst17|altpll:altpll_component|clockgeneral_altpll:auto_generated"
-Info (12128): Elaborating entity "control" for hierarchy "control:inst52"
+Info (12128): Elaborating entity "bloque_control" for hierarchy "bloque_control:inst52"
+Info (12128): Elaborating entity "comparador_2bits" for hierarchy "comparador_2bits:inst18"
+Info (12128): Elaborating entity "Sistema_De_Orientacion" for hierarchy "Sistema_De_Orientacion:inst21"
 Info (12128): Elaborating entity "mux_16x1_2bit" for hierarchy "mux_16x1_2bit:inst51"
 Info (12128): Elaborating entity "Comparador_Celda" for hierarchy "Comparador_Celda:inst376"
 Info (12128): Elaborating entity "mux_2x1_4bit" for hierarchy "mux_2x1_4bit:inst366"
 Info (12128): Elaborating entity "pared" for hierarchy "pared:inst19"
 Info (12128): Elaborating entity "paredes" for hierarchy "paredes:inst20"
-Info (12128): Elaborating entity "Sistema_De_Orientacion" for hierarchy "Sistema_De_Orientacion:inst21"
+Info (12128): Elaborating entity "subsistema_3" for hierarchy "subsistema_3:inst23"
+Info (12128): Elaborating entity "Detector_Cambio_Casilla" for hierarchy "Detector_Cambio_Casilla:inst8"
+Info (12128): Elaborating entity "contador_10" for hierarchy "contador_10:inst9"
 Info (12128): Elaborating entity "FFD_4bits" for hierarchy "FFD_4bits:inst313"
 Info (12128): Elaborating entity "sumador_4bits" for hierarchy "sumador_4bits:inst310"
 Info (12128): Elaborating entity "generate_constant" for hierarchy "generate_constant:inst10"
 Info (12128): Elaborating entity "cte1" for hierarchy "cte1:inst24"
 Info (12128): Elaborating entity "cte_cero" for hierarchy "cte_cero:inst22"
+Info (12128): Elaborating entity "prioridad_giro" for hierarchy "prioridad_giro:inst79"
 Info (12128): Elaborating entity "contador_7600" for hierarchy "contador_7600:inst7"
 Info (12128): Elaborating entity "subsistema_1" for hierarchy "subsistema_1:inst4"
 Info (12128): Elaborating entity "comparador" for hierarchy "comparador:inst6"
 Info (12128): Elaborating entity "contador_6bits" for hierarchy "contador_6bits:inst16"
-Info (12128): Elaborating entity "Detector_Cambio_Casilla" for hierarchy "Detector_Cambio_Casilla:inst8"
-Info (12128): Elaborating entity "contador_10" for hierarchy "contador_10:inst9"
 Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
@@ -1642,6 +1777,8 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "Dir_Min_11_[0]" is stuck at GND
     Warning (13410): Pin "Dir_Min_1_[1]" is stuck at GND
     Warning (13410): Pin "Dir_Min_1_[0]" is stuck at GND
+    Warning (13410): Pin "LEDS[7]" is stuck at GND
+    Warning (13410): Pin "LEDS[6]" is stuck at GND
     Warning (13410): Pin "Mi_Peso12[3]" is stuck at GND
     Warning (13410): Pin "Mi_Peso12[2]" is stuck at GND
     Warning (13410): Pin "Mi_Peso12[1]" is stuck at GND
@@ -1707,23 +1844,21 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "Mi_Peso_1_[1]" is stuck at GND
     Warning (13410): Pin "Mi_Peso_1_[0]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 8 registers lost all their fanouts during netlist optimizations.
+Info (17049): 5 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 2 node(s), including 0 DDIO, 2 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 4 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "pos[0]"
-    Warning (15610): No output dependent on input pin "pos[1]"
-    Warning (15610): No output dependent on input pin "pos[2]"
-    Warning (15610): No output dependent on input pin "pos[3]"
-Info (21057): Implemented 367 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 11 input pins
-    Info (21059): Implemented 117 output pins
-    Info (21061): Implemented 237 logic cells
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "RESET_GRAL"
+    Warning (15610): No output dependent on input pin "clockcito"
+Info (21057): Implemented 437 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 7 input pins
+    Info (21059): Implemented 122 output pins
+    Info (21061): Implemented 306 logic cells
     Info (21065): Implemented 2 PLLs
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 105 warnings
-    Info: Peak virtual memory: 4640 megabytes
-    Info: Processing ended: Wed Nov 27 19:24:32 2024
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 204 warnings
+    Info: Peak virtual memory: 4650 megabytes
+    Info: Processing ended: Sat Nov 30 21:19:12 2024
     Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 
 

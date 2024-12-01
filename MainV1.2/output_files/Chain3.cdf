@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE22F17) Path("C:/Users/LSC/Desktop/Main/output_files/") File("ADC_tutorial.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE22F17) Path("C:/Users/Sorteito/Documents/GitHub/TP-FPGA/MainV1.2/output_files/") File("ADC_tutorial.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
